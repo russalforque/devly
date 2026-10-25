@@ -1,0 +1,612 @@
+0|diagnostic|diagnostic
+1|resulta sa diagnostic|resulta ng diagnostic
+2|· Naay tabang|· May tulong
+3|· Gigamit ang reference|· Ginamit ang reference
+12|ka adlaw nga pagitan|araw na pagitan
+13|. Wala pa ma-assess ang mastery.|. Hindi pa nasusuri ang mastery.
+14|. Tagsa-tagsa ang mga score ug base lang sa anaa nga content.|. Magkakahiwalay ang mga score at batay lang sa available na content.
+15|/ 12,000 ka karakter · Puwedeng laktawan ang walay tubag.|/ 12,000 character · Puwedeng laktawan ang walang sagot.
+16|/ 5 ka aktibong adlaw sa pagkat-on|/ 5 aktibong araw ng pag-aaral
+17|/ 8,000 ka karakter|/ 8,000 character
+18|0 = kinahanglan pa og praktis · 1 = medyo napakita · 2 = klarong napakita. Ayaw sa og hatag og rating kung dili ka sigurado. Itandi sa reference, pangitaa ang usa ka kulang, ug sulayi pag-usab sa imong kaugalingong mga pulong.|0 = kailangan pang praktisin · 1 = bahagyang naipakita · 2 = malinaw na naipakita. Huwag munang mag-rate kung hindi ka sigurado. Ihambing sa reference, tukuyin ang isang kulang, at subukan ulit sa sarili mong salita.
+19|0 · Kinahanglan pa og praktis|0 · Kailangan pang praktisin
+20|01 / SABTA|01 / UNAWAIN
+21|02 / IKONEKTA|02 / IUGNAY
+22|03 / SULAYI MISMO|03 / SUBUKAN MISMO
+23|04 / SUSIHA ANG IMONG PAGSABOT|04 / SURIIN ANG PAG-UNAWA MO
+24|05 / HINUMDOMI KINI|05 / TANDAAN ITO
+25|1 · Medyo napakita|1 · Bahagyang naipakita
+26|12 minutos para sa tulo ka pangutana. Magpadayon ang timer bisan mobiya ka. Inig kahurot, isumite ang imong na-save nga mga tubag ug maablihan ang mga reference.|12 minuto para sa tatlong tanong. Tuloy ang timer kahit umalis ka. Kapag naubos ito, isusumite ang mga na-save mong sagot at bubuksan ang mga reference.
+27|2 · Klarong napakita|2 · Malinaw na naipakita
+28|2 ka pangutana|2 tanong
+29|3 ka pangutana matag technology|3 tanong bawat technology
+30|6 ka giya nga buluhaton|6 na gawaing may gabay
+31|6 ka leksiyon ang anaa|6 na aralin ang available
+32|8 ka kategorya · 24 ka pangutana|8 kategorya · 24 tanong
+34|Bag-ong sugod.|Bagong simula.
+35|Klarong dalan. Walay pugos nga beginner lessons.|Malinaw na landas. Walang sapilitang beginner lessons.
+36|Tan-awa pag-ayo ang imong stack|Kilalanin pa ang stack mo
+37|Sugdi pag-usab|Magsimula ulit
+38|Gamayng pokus karon. Mas maayong developer ugma.|Kaunting pokus ngayon. Mas mahusay na developer bukas.
+39|Gamayng giya|Kaunting gabay
+40|Praktis una|Praktis muna
+41|Gamayng praktis. Mas maayong developer.|Kaunting praktis. Mas mahusay na developer.
+42|Giya kung kinahanglan nimo|Gabay kapag kailangan mo
+43|Giya, dili dayong tubag|Gabay, hindi agad sagot
+44|Giya, dili dayong tubag.|Gabay, hindi agad sagot.
+45|Lugar para sa imong sunod nga tukion|Lugar para sa susunod mong tuklasin
+46|Pananglitan sa tinuod nga paggamit|Halimbawa sa aktuwal na paggamit
+47|Gamayng hagit sa panghunahuna|Munting hamon sa pag-iisip
+48|Gisugyot nga han-ay sa paghimo. Ipahiangay ang implementation sa imong stack.|Iminungkahing pagkakasunod sa paggawa. Iangkop ang implementation sa stack mo.
+49|Gisugyot nga tumong kada semana. Aktibong adlaw ang pagpasa og lesson check o pagsulbad og challenge nga ikaw ra.|Iminungkahing lingguhang layunin. Aktibong araw ang pagpasa sa lesson check o paglutas ng challenge nang mag-isa.
+50|Mapuslanong sayop. Kat-onan nato.|Kapaki-pakinabang na pagkakamali. Matuto tayo rito.
+51|Gihimo sa AI|Ginawa ng AI
+52|Mga sukdanan sa pagdawat|Mga pamantayan sa pagtanggap
+53|Ang imong awtorisadong account ra ang makasulod. Dili puwedeng mag-sign up ang publiko.|Awtorisadong account mo lang ang makakapasok. Naka-disable ang pampublikong sign-up.
+54|Buhaton|Aksyon
+55|Aktuwal nga nahitabo|Aktuwal na nangyari
+56|Mga rekomendasyon base sa imong resulta|Mga rekomendasyon batay sa resulta mo
+57|Dili ma-load ang ubang learning signals:|Hindi ma-load ang iba pang learning signals:
+58|Advanced|Advanced
+59|Napakita na ang tanang hint|Naipakita na ang lahat ng hint
+60|Napakita na ang tanang hint. Dili makapakunhod sa progress ang paggamit niini.|Naipakita na ang lahat ng hint. Hindi nababawasan ang progress kapag gumamit nito.
+61|Tanang learning path|Lahat ng learning path
+62|Tanang leksiyon|Lahat ng aralin
+63|Tanang lebel|Lahat ng antas
+64|Tanang path|Lahat ng path
+65|Tangtangon ang tanang gisumite nga interview report ug rating niini nga workspace. Magpabilin ang aktibong draft.|Aalisin ang lahat ng naisumiteng interview report at rating sa workspace na ito. Mananatili ang aktibong draft.
+66|Makita ang tanang test. Ang browser-side tests kay ebidensya sa pagkat-on, dili assessment nga dili ma-usab.|Nakikita ang lahat ng test. Ang browser-side tests ay ebidensya ng pagkatuto, hindi assessment na hindi kayang baguhin.
+67|Kanunay pang nagkat-on.|Patuloy na natututo.
+68|Laing pangutana|Isa pang tanong
+69|Tubaga ang matag pangutana gamit ang balidong kapilian sa dili pa isumite.|Sagutin ang bawat tanong gamit ang wastong pagpipilian bago isumite.
+70|Natubag|Nasagot
+71|Hitsura|Hitsura
+72|Pangutana sa mentor|Magtanong sa mentor
+73|Gigamit na ang assessment attempt ID sa laing resulta.|Ginamit na ang assessment attempt ID sa ibang resulta.
+74|Dili magamit ang assessment storage.|Hindi magamit ang assessment storage.
+75|Na-save ang pagsulay ug draft|Na-save ang pagsubok at draft
+76|Anaa|Available
+77|Anaa na karon|Available na ngayon
+78|Anaa para tun-an|Available para pag-aralan
+79|PARA SA IMONG SUNOD NGA LEBEL|PARA SA SUSUNOD MONG ANTAS
+80|Balik sa tanang diagnostic|Bumalik sa lahat ng diagnostic
+81|Balik sa kinatibuk-ang tan-aw|Bumalik sa pangkalahatang tingin
+83|Base sa nasayopang mga topic sa pinakabag-ong pagsulay sa matag technology, unahon ang pinakaubos nga signal.|Batay sa mga topic na namali sa pinakahuling pagsubok sa bawat technology, mauuna ang pinakamababang signal.
+84|Sa dili pa magsugod|Bago magsimula
+85|Beginner|Beginner
+86|Mas maayo kaysa kagahapon|Mas mahusay kaysa kahapon
+87|Tan-awa ang mga challenge|Tingnan ang mga challenge
+88|Report sa bug|Ulat ng bug
+89|Pagkat-on sulod sa tulo ka sunod-sunod nga adlaw|Mag-aral nang tatlong magkakasunod na araw
+90|Palaloma ang kahibalo sa imong stack|Palalimin ang kaalaman sa stack mo
+91|Himoa sa imong editor ug repository. Irekord sa Devly ang checklist ug notes; dili niini i-execute ang code, ipadagan ang tests, i-host ang project o pamatud-an ang pagkahuman.|Gawin sa editor at repository mo. Itinatala ng Devly ang checklist at notes; hindi nito ine-execute ang code, pinapatakbo ang tests, hina-host ang project o bineberipika ang pagkumpleto.
+92|Notes ug ebidensya sa paghimo|Notes at ebidensya ng paggawa
+93|Makasaysay ba ka sa ideya gamit ang kaugalingon nimong mga pulong?|Maipapaliwanag mo ba ang ideya sa sarili mong salita?
+94|Kanselahon|Kanselahin
+95|Kanselahon ang request|Kanselahin ang request
+96|Kategorya|Kategorya
+97|Wala makit-i ang challenge|Hindi makita ang challenge
+98|Mga challenge nga nasulbad|Mga challenge na nalutas
+99|Na-save ang mga kausaban.|Na-save ang mga pagbabago.
+100|Gisulayan ang check|Sinubukan ang check
+101|I-check lang ang matag sukdanan human mapamatud-i ang behavior.|I-check lang ang bawat pamantayan matapos maberipika ang behavior.
+102|Susiha ang akong pagsabot|Suriin ang pag-unawa ko
+103|Napasar ang check|Naipasa ang check
+104|Susiha ang connection settings|Suriin ang connection settings
+105|Pagpili og buluhaton|Pumili ng gawain
+106|Pagpili og challenge sa imong workspace.|Pumili ng challenge sa workspace mo.
+107|Pagpili og conceptual hint, sunod nga lakang, o mas lawom nga giya. Unaha ang kaugalingon nimong panghunahuna.|Pumili ng conceptual hint, susunod na hakbang, o mas malalim na gabay. Unahin ang sarili mong pag-iisip.
+108|Pagpili bisan unsang technology|Pumili ng anumang technology
+109|Pagpili og track sa imong learning library.|Pumili ng track sa learning library mo.
+110|Pagpili sa sunod nimong hisgutan|Piliin ang susunod mong pag-uusapan
+111|Haw-asa ang filters|Alisin ang filters
+112|Haw-asa ang history|Burahin ang history
+113|Haw-asa ang gisumite nga history|Burahin ang naisumiteng history
+114|Haw-ason ang gisumite nga history?|Burahin ang naisumiteng history?
+115|Dili magamit ang clipboard. Pilia ang code ug kopyaha mismo.|Hindi magamit ang clipboard. Piliin ang code at kopyahin mismo.
+116|Sirad-i ang dialog|Isara ang dialog
+117|Sirad-i ang navigation|Isara ang navigation
+118|Baliki ug palig-ona|Balikan at patatagin
+119|Milapas ang code sa 50,000 ka karakter.|Lumampas ang code sa 50,000 character.
+120|Coding challenge|Coding challenge
+121|Mga coding challenge|Mga coding challenge
+122|Pakunhori ang sidebar|Paliitin ang sidebar
+123|Kompletoha ang diagnostic para makakuha og tukmang leksiyon nga gisugyot.|Kumpletuhin ang diagnostic para makakuha ng angkop na mungkahing aralin.
+124|Kompletoha ang knowledge check sa leksiyon para magsugod ang review schedule.|Kumpletuhin ang knowledge check ng aralin para magsimula ang review schedule.
+125|Kompletoha ang matag task, acceptance check ug test scenario, unya irekord ang imong pagkahuman. Walay automatic grading.|Kumpletuhin ang bawat task, acceptance check at test scenario, saka itala ang pagkumpleto mo. Walang automatic grading.
+126|Kompletoha ang usa ka lesson check|Kumpletuhin ang isang lesson check
+127|Nahuman · kaugalingong report|Tapos · sariling ulat
+128|Gi-report nga nahuman niadtong|Iniulat na natapos noong
+129|Kumpirmaha ang imong report sa pagkahuman|Kumpirmahin ang ulat mo ng pagkumpleto
+130|Ikonekta ang imong pribadong Supabase account para niini nga opsyonal nga serbisyo. Magamit gihapon ang lokal nimong learning tools.|Ikonekta ang pribado mong Supabase account para sa opsyonal na serbisyong ito. Magagamit pa rin ang lokal mong learning tools.
+131|Ikonekta ang imong pribadong workspace|Ikonekta ang pribado mong workspace
+132|Konektado|Konektado
+133|Konektado sa Supabase|Konektado sa Supabase
+135|Padayon sa pagkat-on|Magpatuloy sa pag-aaral
+136|Padayon sa project|Ipagpatuloy ang project
+137|Nakopya|Nakopya
+138|Kopyaha|Kopyahin
+139|Kopyaha ang code example|Kopyahin ang code example
+140|Sakto|Tama
+141|Saktong tubag:|Tamang sagot:
+142|Dili ma-load ang imong mga diagnostic|Hindi ma-load ang mga diagnostic mo
+143|Dili ma-save:|Hindi ma-save:
+144|Ctrl + Enter para ipadagan · Ctrl + S para i-save|Ctrl + Enter para patakbuhin · Ctrl + S para i-save
+146|Karon nga interview|Kasalukuyang interview
+147|Karon nga streak|Kasalukuyang streak
+148|Giplanong curriculum|Nakaplanong curriculum
+149|Roadmap sa curriculum|Roadmap ng curriculum
+150|Pokus karong adlawa|Pokus ngayong araw
+151|Nakab-ot ang tumong karong adlawa. Maayo!|Naabot ang layunin ngayong araw. Magaling!
+152|Tumong sa pagkat-on kada adlaw|Layunin sa pag-aaral araw-araw
+153|Ngitngit|Madilim
+155|Debugging lab|Debugging lab
+156|Nagkinahanglan og panahon ang lawom nga pagsabot.|Kailangan ng panahon ang malalim na pag-unawa.
+158|Roadmap sa development|Roadmap ng development
+159|Devly home|Devly home
+161|Na-save ang diagnostic.|Na-save ang diagnostic.
+162|Signal sa diagnostic|Signal ng diagnostic
+163|Nasaysay ba nako ngano nga molihok ang pamaagi ug natubag ba ang importanteng mga punto?|Naipaliwanag ko ba kung bakit gumagana ang paraan at nasagot ang mahahalagang punto?
+164|Nakahatag ba ko og konkretong pananglitan, plano sa pag-verify o matinud-anong resulta, apil ang mga limitasyon?|Nagbigay ba ako ng konkretong halimbawa, plano sa pag-verify o tapat na resulta, kasama ang mga limitasyon?
+165|Isalikway ang draft|Itapon ang draft
+166|Isalikway kini nga draft?|Itapon ang draft na ito?
+167|Tangtanga ang error|Isara ang error
+168|Na-save ang draft|Na-save ang draft
+169|Panahon na sa review|Oras na para sa review
+170|SUSIHA ANG USA KA KONSEPTO|TUKLASIN ANG ISANG KONSEPTO
+171|SUSIHA ANG LABAW PA SA BROWSER|TUKLASIN ANG LAMPAS SA BROWSER
+172|Ang matag buluhaton adunay plano, acceptance criteria, architecture notes, tests ug hinay-hinay nga mga hint.|Bawat gawain ay may plano, acceptance criteria, architecture notes, tests at unti-unting mga hint.
+173|Lahi ang baseline sa matag technology. Walay prerequisite o naka-lock nga assessment.|Hiwalay ang baseline ng bawat technology. Walang prerequisite o naka-lock na assessment.
+174|Gipaninguhaan, dili gihatag lang|Pinaghirapan, hindi basta ibinigay
+175|Usba ang profile|I-edit ang profile
+176|Dili puwedeng mag-edit aron mapanalipdan ang daang records.|Naka-disable ang pag-edit para maprotektahan ang mga kasalukuyang record.
+177|Programming language sa editor|Programming language sa editor
+178|Email|Email
+180|Esc para isira|Esc para isara
+182|Gibanabana|Tinataya
+183|Ebidensya ug tradeoffs|Ebidensya at tradeoffs
+184|Score base sa ebidensya|Score batay sa ebidensya
+185|Score base sa ebidensya: 40% diagnostic accuracy + 60% sa anaa nga challenges nga nasulbad nga ikaw ra. Gamay nga sample, dili sertipikasyon.|Score batay sa ebidensya: 40% diagnostic accuracy + 60% ng available na challenges na nalutas nang mag-isa. Maliit na sample, hindi sertipikasyon.
+186|Milapas sa 3.5 segundos ang execution ug gihunong.|Lumampas sa 3.5 segundo ang execution at itinigil.
+187|Palapda ang sidebar|Palawakin ang sidebar
+188|Gipaabot nga behavior|Inaasahang behavior
+189|XP nga nakab-ot|XP na nakamit
+190|Isaysay ang imong gisulayan. Pangayo lang og igo nga tabang para sa sunod nga lakang.|Ipaliwanag ang sinubukan mo. Humingi lang ng sapat na tulong para sa susunod na hakbang.
+191|Isaysay ang imong pangatarongan, tradeoffs ug paagi sa pag-verify sa resulta.|Ipaliwanag ang pangangatwiran, tradeoffs at paraan mo ng pag-verify ng resulta.
+192|Ipakita ang reference solution sa akong hangyo|Ipakita ang reference solution sa hiling ko
+193|Susiha ang laing konsepto|Tuklasin ang ibang konsepto
+194|Susiha ang anaa nga mga path|Tuklasin ang available na mga path
+195|Susiha ang mga learning path|Tuklasin ang mga learning path
+196|Susiha ang mga leksiyon|Tuklasin ang mga aralin
+197|Susiha ang curriculum|Tuklasin ang curriculum
+198|I-export ang tanang progress|I-export ang lahat ng progress
+199|Wala nakapasar nga coding attempts|Mga coding attempt na hindi pumasa
+200|I-filter ang learning paths|I-filter ang learning paths
+201|Pangita og problema…|Maghanap ng problema…
+202|Pangitaa ang sunod nga mapuslanong leksiyon, usa ka technology matag higayon.|Hanapin ang susunod na kapaki-pakinabang na aralin, isang technology sa bawat pagkakataon.
+203|Pangita og tun-an|Maghanap ng pag-aaralan
+204|Pangitaa ang sunod nimong konsepto|Hanapin ang susunod mong konsepto
+205|Pangitaa ang sunod nimong kalamboan.|Hanapin ang susunod mong pagkakataong umunlad.
+206|Pangitaa ang imong ritmo|Hanapin ang ritmo mo
+207|Pangitaa ang imong technology…|Hanapin ang technology mo…
+208|Mga unang prinsipyo|Mga unang prinsipyo
+209|Nakapokus nga pagkat-on|Nakapokus na pag-aaral
+210|I-format|I-format
+211|Gikan sa ideya ngadto sa implementation|Mula ideya tungo sa implementation
+213|PALALOMA, USA KA KONSEPTO MATAG HIGAYON|PALALIMIN, ISANG KONSEPTO SA BAWAT PAGKAKATAON
+214|Kuhaa ang resulta sa diagnostic|Kunin ang resulta ng diagnostic
+215|Hunahunaa kini|Pag-isipan ito
+216|Dili natawo nga maayo dayon ang mga developer.|Hindi ipinanganak na mahusay agad ang mga developer.
+217|Hint|Hint
+218|Unsa ka daghang tabang ang mapuslanon?|Gaano karaming tulong ang kailangan?
+219|Gipaabot nako… Gisulayan nako… Ang wala nako masabti kay…|Inaasahan ko… Sinubukan ko… Ang hindi ko maintindihan ay…
+220|Tin-aw kong gihangyo ang kompletong solusyon.|Malinaw kong hinihiling ang kumpletong solusyon.
+221|NIINI NGA LEKSIYON|SA ARALING ITO
+222|IMBESTIGAHA. SUNDOGA. AYUHA.|IMBESTIGAHAN. ULITIN. AYUSIN.
+223|Mga task sa implementation|Mga task sa implementation
+224|Gipadayon|Kasalukuyang ginagawa
+226|Intermediate|Intermediate
+227|Pagpangandam sa interview|Paghahanda sa interview
+228|Report sa interview|Ulat ng interview
+229|Mga report sa interview|Mga ulat ng interview
+230|Interview studio|Interview studio
+231|Interview · 12 minutos|Interview · 12 minuto
+232|Dili balido ang assessment identity o timestamp.|Hindi wasto ang assessment identity o timestamp.
+233|Dili balido ang coding history.|Hindi wasto ang coding history.
+234|Dili balido ang gidugayon sa praktis.|Hindi wasto ang tagal ng praktis.
+235|Dili balido ang na-save nga attempts.|Hindi wasto ang mga na-save na attempt.
+236|Dili balido ang na-save nga drafts.|Hindi wasto ang mga na-save na draft.
+237|Imbestigaha|Imbestigahan
+238|JAVASCRIPT · INTERMEDIATE|JAVASCRIPT · INTERMEDIATE
+239|Ang JavaScript ug TypeScript modagan sa opaque-origin sandbox gamit ang temporaryong worker, walay network, adunay timeout ug limit sa output. Dili estriktong malimitahan ang browser memory. Ang Python, PHP ug C# mogamit sa lahi nga serbisyo nga adunay resource limits.|Tumatakbo ang JavaScript at TypeScript sa opaque-origin sandbox gamit ang pansamantalang worker, walang network, may timeout at limit sa output. Hindi mahigpit na malilimitahan ang browser memory. Gumagamit ang Python, PHP at C# ng hiwalay na serbisyong may resource limits.
+240|Diretso sa materyal nga kinahanglan nimo. Giya ang prerequisites; dili kini babag.|Dumiretso sa materyal na kailangan mo. Gabay ang prerequisites; hindi ito hadlang.
+241|TIPIGI ANG MAPUSLANON|ITABI ANG KAPAKI-PAKINABANG
+242|Ayaw isira kini nga page; sulayi pag-usab una mobiya.|Huwag isara ang page na ito; subukan ulit bago umalis.
+243|Ipadayon ang imong kalamboan|Ipagpatuloy ang pag-unlad mo
+244|Pagsusi sa pagsabot|Pagsusuri ng pag-unawa
+245|Napasar nga knowledge checks|Mga naipasang knowledge check
+246|LEARNING PATH|LEARNING PATH
+247|Pinulongan|Wika
+248|Mga pinulongan|Mga wika
+249|Pinakabag-ong diagnostic ·|Pinakahuling diagnostic ·
+250|Kat-on. Praktis. Debug. Master.|Matuto. Magpraktis. Mag-debug. Magpakahusay.
+251|Kalihokan sa pagkat-on sa miaging 84 ka adlaw|Aktibidad sa pag-aaral sa nakaraang 84 na araw
+252|Mentor sa pagkat-on|Mentor sa pag-aaral
+253|Learning path|Learning path
+254|Mga learning path|Mga learning path
+255|Mga learning path / Leksiyon|Mga learning path / Aralin
+256|Streak sa pagkat-on|Streak sa pag-aaral
+257|Gamay|Kaunti
+258|Minus sa pag-scroll.|Bawas sa pag-scroll.
+259|Leksiyon + pagsusi sa pagsabot|Aralin + pagsusuri ng pag-unawa
+260|Lesson check|Lesson check
+261|Nahuman nga leksiyon|Natapos na aralin
+262|Ang pagkompleto sa leksiyon nagrekord sa napasar nga knowledge check. Ang evidence score naghiusa sa diagnostic accuracy (40%) ug sa challenges nga nasulbad nga ikaw ra (60%) sa kasamtangang content sample.|Ang pagkumpleto ng aralin ay nagtatala ng naipasang knowledge check. Pinagsasama ng evidence score ang diagnostic accuracy (40%) at mga challenge na nalutas nang mag-isa (60%) sa kasalukuyang content sample.
+263|Wala makit-i ang leksiyon|Hindi makita ang aralin
+264|Wala makit-i ang leksiyon.|Hindi makita ang aralin.
+265|Mga leksiyon|Mga aralin
+266|Gihimo pa nga mga leksiyon|Mga araling ginagawa pa
+267|Nahuman nga mga leksiyon|Mga natapos na aralin
+268|Ibalik nato ka sa imong pagkat-on.|Ibalik ka natin sa pag-aaral.
+269|Lebel 1 — Conceptual hint|Antas 1 — Conceptual hint
+270|Lebel 2 — Mas espesipikong giya|Antas 2 — Mas tiyak na gabay
+271|Lebel 3 — Pseudocode o bahin sa pagsaysay|Antas 3 — Pseudocode o bahagyang paliwanag
+272|Lebel 4 — Kompletong pagsaysay o solusyon|Antas 4 — Kumpletong paliwanag o solusyon
+273|Hayag|Maliwanag
+274|Gi-load ang Monaco Editor…|Nilo-load ang Monaco Editor…
+275|Gi-load ang mga diagnostic…|Nilo-load ang mga diagnostic…
+276|Gi-load ang imong mga interview…|Nilo-load ang mga interview mo…
+277|Gi-load ang imong learning history…|Nilo-load ang learning history mo…
+278|Gi-load ang imong mga project…|Nilo-load ang mga project mo…
+279|Lokal nga mode|Lokal na mode
+280|Lokal nga workspace|Lokal na workspace
+281|Pinakaubos nga signal sa sample:|Pinakamababang signal sa sample:
+282|PALIG-ONA ANG NAHINUMDOMAN|PATATAGIN ANG NATANDAAN
+283|MGA LEKSIYON NGA NAKIT-AN|MGA ARALING TUMUGMA
+284|Pangunang navigation|Pangunahing navigation
+285|Paggahin og panahon para molambo.|Maglaan ng panahon para umunlad.
+286|Anara ang pagka-mausisaon.|Sanayin ang pagiging mausisa.
+287|Sabta ug gamita mismo|Unawain at gamitin mismo
+288|Ipahiangay sa imong gusto|Iangkop sa gusto mo
+289|Giya sa mentor · Lebel|Gabay ng mentor · Antas
+290|Gagmayng project|Maliliit na project
+291|Daghan|Marami
+292|Sandbox sa daghang programming language|Sandbox para sa maraming programming language
+293|Akong progress|Progress ko
+294|Kinahanglan pa og praktis|Kailangan pang praktisin
+295|Sunod niini nga curriculum|Susunod sa curriculum na ito
+296|Sunod nga pangutana|Susunod na tanong
+297|Walay console output.|Walang console output.
+298|Walay nakitang kulang niining gamay nga sample. Gamita ang mga konsepto sa code para masusi ang imong pagsabot.|Walang nakitang kulang sa maliit na sample na ito. Gamitin ang mga konsepto sa code para masuri ang pag-unawa mo.
+299|Walay challenge nga mitugma|Walang tumugmang challenge
+300|Walay konsepto nga mitugma. Sulayi ang “React”, “async”, o “SQL”.|Walang tumugmang konsepto. Subukan ang “React”, “async”, o “SQL”.
+301|Walay path nga mitugma|Walang tumugmang path
+302|Walay nasayopang topic sa pinakabag-o nimong mga diagnostic. Gamita ang mga konsepto sa project o sulayi ang laing technology.|Walang namaling topic sa pinakahuli mong mga diagnostic. Gamitin ang mga konsepto sa project o subukan ang ibang technology.
+303|Walay gisumite nga tubag.|Walang naisumiteng sagot.
+304|Walay limit sa oras|Walang limit sa oras
+305|Wala pa ma-assess|Hindi pa nasusuri
+306|Wala pay rating|Wala pang rating
+307|Angay nimong balikan|Dapat mong balikan
+308|Usa ka posibleng tubag|Isang posibleng sagot
+309|Ablihi ang buluhaton|Buksan ang gawain
+310|Ablihi ang challenge|Buksan ang challenge
+311|Ablihi ang mga coding challenge|Buksan ang mga coding challenge
+312|Ablihi ang leksiyon|Buksan ang aralin
+313|Ablihi ang multi-language sandbox|Buksan ang multi-language sandbox
+314|Ablihi ang akong workspace|Buksan ang workspace ko
+315|Ablihi ang navigation|Buksan ang navigation
+316|Ablihi ang profile settings|Buksan ang profile settings
+317|Ablihi ang gisugyot nga leksiyon|Buksan ang iminungkahing aralin
+318|Ablihi ang imong mentor|Buksan ang mentor mo
+319|Giablihan ang imong coding workspace…|Binubuksan ang coding workspace mo…
+320|Giablihan ang sunod nimong lakang…|Binubuksan ang susunod mong hakbang…
+321|Giablihan ang imong workspace…|Binubuksan ang workspace mo…
+322|Opsyonal nga AI mentor|Opsyonal na AI mentor
+323|Giputol ang output tungod sa limit sa serbisyo.|Pinutol ang output dahil sa limit ng serbisyo.
+324|Kinatibuk-ang tan-aw|Pangkalahatang tingin
+325|PHASE 03 · PRAKTIS NGA NAAY TUMONG|PHASE 03 · PRAKTIS NA MAY LAYUNIN
+326|PHASE 05 · PAGHIMO OG MAPUSLANON|PHASE 05 · GUMAWA NG KAPAKI-PAKINABANG
+327|KALAMBOAN NGA MAKITA NIMO|PAG-UNLAD NA MAKIKITA MO
+328|Dungan, apan masaligan ang han-ay.|Sabay-sabay, pero tiyak ang ayos.
+329|Napasar|Pumasa
+330|Napasar uban sa tabang sa solusyon|Pumasa sa tulong ng solusyon
+331|Password|Password
+332|Wala makit-i ang path|Hindi makita ang path
+333|Hunong sa una magpadayon og basa.|Huminto muna bago magpatuloy sa pagbasa.
+334|Personal nga navigation|Personal na navigation
+335|Personal nga workspace|Personal na workspace
+336|Pagpili og konsepto, praktisa, ug sabta mismo. Naa ra dinhi ang sunod nimong lakang.|Pumili ng konsepto, praktisin, at unawain mismo. Nandito ang susunod mong hakbang.
+337|Padayon sa imong gibiyaan|Ituloy kung saan ka huminto
+338|Giplanong curriculum · adunay dugang nga mga leksiyon|Nakaplanong curriculum · may darating pang mga aralin
+339|Giplanong leksiyon|Nakaplanong aralin
+340|Pag-sign in pag-usab para maablihan ang imong na-save nga trabaho.|Mag-sign in ulit para mabuksan ang na-save mong gawa.
+341|Pag-sign in pag-usab.|Mag-sign in ulit.
+342|Mga punto nga pangitaon|Mga puntong hahanapin
+343|Praktis|Praktis
+344|Praktis pag-usab|Magpraktis ulit
+345|Praktisa ang nasayopang mga konsepto gamit ang anaa nga leksiyon ug exercise.|Praktisin ang mga konseptong namali gamit ang available na aralin at exercise.
+346|Praktis · walay timer|Praktis · walang timer
+347|Na-save ang mga gusto nimo|Na-save ang mga preference mo
+348|Giandam ang export…|Inihahanda ang export…
+349|Mga kinahanglan daan:|Mga kailangan muna:
+350|Miagi|Nakaraan
+351|Pribadong Supabase workspace|Pribadong Supabase workspace
+352|Pribadong workspace|Pribadong workspace
+353|Nahuman ang process · Exit|Natapos ang process · Exit
+354|Sirado ang production access hangtod ma-configure. Magamit ang lokal nga preview pinaagi sa|Sarado ang production access hanggang ma-configure. Magagamit ang lokal na preview gamit ang
+355|Kahanas: wala pa ma-assess|Kasanayan: hindi pa nasusuri
+356|Program|Program
+357|Limit sa program: 12,000 UTF-8 bytes. Limit sa standard input: 2,000 UTF-8 bytes.|Limit ng program: 12,000 UTF-8 bytes. Limit ng standard input: 2,000 UTF-8 bytes.
+358|Dinhi nga browser gi-save ang progress. Walay account protection o cross-device sync ang lokal nga preview. Ikonekta ang Supabase gamit ang project README para sa pribadong cloud storage.|Sa browser na ito naka-save ang progress. Walang account protection o cross-device sync ang lokal na preview. Ikonekta ang Supabase gamit ang project README para sa pribadong cloud storage.
+359|Dili pareho ang progress ug mastery.|Hindi pareho ang progress at mastery.
+360|Wala ang progress provider.|Wala ang progress provider.
+361|Mga project nga gi-report nga nahuman|Mga project na iniulat na tapos
+363|Gamita sa praktis|Gamitin sa praktis
+364|Pangutana|Tanong
+365|Andam sa pagsusi|Handa nang tumuklas
+366|Andam sa pagsugod|Handa nang magsimula
+367|Tinuod nga kalihokan. Matinud-anong signals. Klarong sunod nga lakang.|Totoong aktibidad. Tapat na signals. Malinaw na susunod na hakbang.
+368|Realistikong bug reports. Guba nga code. Test suite nga motino kung naayo na.|Makatotohanang bug reports. Sirang code. Test suite na tutukoy kung naayos na.
+369|Hinumdomi una. Baliki lang ang pagsaysay kung kinahanglan.|Alalahanin muna. Balikan lang ang paliwanag kung kailangan.
+370|Bag-ong kalihokan|Kamakailang aktibidad
+371|Gisugyot:|Iminumungkahi:
+372|Irekord ang commands, resulta, desisyon ug imong pauswagon. Ayaw ilakip ang secrets o pribadong data.|Itala ang commands, resulta, desisyon at mga pagbubutihin mo. Huwag isama ang secrets o pribadong data.
+373|Irekord ang imong pagkahuman?|Itala ang pagkumpleto mo?
+374|Narekord nga kalihokan lang|Naitalang aktibidad lang
+375|Narekord nga praktis|Naitalang praktis
+376|Reference answer · gipakita atol sa praktis|Reference answer · ipinakita habang nagpraktis
+377|Reference solution ug hinungdan sa bug|Reference solution at sanhi ng bug
+378|Kalabotang code o context (opsyonal)|Kaugnay na code o context (opsyonal)
+379|I-load pag-usab ang workspace|I-load ulit ang workspace
+380|Ablihi pag-usab ang project|Buksan ulit ang project
+381|I-report nga nahuman ang project|Iulat na tapos ang project
+382|Asa ang repository, tests nga gipadagan, naobserbahang resulta, tradeoffs, sunod nga mga lakang…|Lokasyon ng repository, tests na pinatakbo, naobserbahang resulta, tradeoffs, susunod na mga hakbang…
+383|Mga kinahanglanon|Mga kinakailangan
+384|I-reset ang code|I-reset ang code
+385|I-reset ang project|I-reset ang project
+386|I-reset kini nga draft?|I-reset ang draft na ito?
+387|I-reset kini nga project|I-reset ang project na ito
+388|I-reset kini nga project?|I-reset ang project na ito?
+389|Ibalik sa starter|Ibalik sa starter
+390|Mga tubag nga nasulat|Mga sagot na naisulat
+391|Mga resulta ug console|Mga resulta at console
+392|Usba ang pagsulay|Ulitin ang pagsubok
+393|Usba ang diagnostic|Ulitin ang diagnostic
+394|Sulayi pag-usab|Subukan ulit
+395|Sulayi pag-load pag-usab|Subukang i-load ulit
+396|Sulayi pag-save pag-usab|Subukang i-save ulit
+397|Sulayi kini nga kategorya pag-usab|Subukan ulit ang kategoryang ito
+398|Ipakita ang hint|Ipakita ang hint
+399|Ipakita ang tagsa-tagsa ka hint, gikan sa giya ngadto sa implementation.|Ipakita ang hint nang paisa-isa, mula gabay hanggang implementation.
+400|Ipakita ang reference answer|Ipakita ang reference answer
+401|Baliki|Balikan
+402|Baliki ang mga learning path|Balikan ang mga learning path
+403|Baliki ang leksiyon|Balikan ang aralin
+404|Napasar ang review|Naipasa ang review
+405|Baliki ang project|Balikan ang project
+406|Pila sa review|Pila ng review
+407|Baliki ang kaugalingong assessments|Balikan ang sariling assessments
+408|Baliki ang imong mga tubag|Balikan ang mga sagot mo
+409|Review · 0 XP|Review · 0 XP
+410|Baliki, dayon padayon|Balikan, saka magpatuloy
+411|Baliki:|Balikan:
+412|Roadmap|Roadmap
+413|Mga rating nga nasulod sa rubric|Mga rating na inilagay sa rubric
+414|Ipadagan ang gamayng program gamit ang standard input ug susiha ang output.|Patakbuhin ang maliit na program gamit ang standard input at suriin ang output.
+415|Gikansela ang pagpadagan.|Kinansela ang pagpapatakbo.
+416|Ipadagan ang program|Patakbuhin ang program
+417|Ipadagan ang tests|Patakbuhin ang tests
+418|Ipadagan kini sa imong environment, dayon irekord ang imong napamatud-an.|Patakbuhin ang mga ito sa environment mo, saka itala ang napatunayan mo.
+419|Ipadagan ang imong solusyon para makita ang deterministic results ug console output.|Patakbuhin ang solusyon mo para makita ang deterministic results at console output.
+420|Nagpadagan sa container…|Tumatakbo sa container…
+421|Nagpadagan…|Tumatakbo…
+422|I-save ang draft|I-save ang draft
+423|I-save ang leksiyon|I-save ang aralin
+424|I-save ang preferences|I-save ang preferences
+425|Na-save|Na-save
+426|Dili balido ang na-save nga kalihokan.|Hindi wasto ang na-save na aktibidad.
+427|Dili balido ang na-save nga assessment attempt o wala gisuportahi ang bersiyon sa pangutana.|Hindi wasto ang na-save na assessment attempt o hindi suportado ang bersiyon ng tanong.
+428|Dili balido ang na-save nga assessment attempt.|Hindi wasto ang na-save na assessment attempt.
+429|Dili balido ang na-save nga assessment timestamp.|Hindi wasto ang na-save na assessment timestamp.
+430|Wala gisuportahi ang bersiyon o history sa na-save nga assessment.|Hindi suportado ang bersiyon o history ng na-save na assessment.
+431|Dili balido ang na-save nga assessments.|Hindi wasto ang mga na-save na assessment.
+432|Na-save nga attempts para sa|Mga na-save na attempt para sa
+433|Dili balido ang na-save nga bookmarks.|Hindi wasto ang mga na-save na bookmark.
+434|Gitipigan para unya|Naka-save para mamaya
+435|Dili balido o wala gisuportahi ang bersiyon sa na-save nga interview data. Wala kini ilisi.|Hindi wasto o hindi suportado ang bersiyon ng na-save na interview data. Hindi ito pinalitan.
+436|Dili balido ang na-save nga lesson progress.|Hindi wasto ang na-save na lesson progress.
+437|Na-save niini nga device|Na-save sa device na ito
+438|Dili balido ang na-save nga profile.|Hindi wasto ang na-save na profile.
+439|Dili balido o wala gisuportahi ang bersiyon sa na-save nga project data. Wala kini ilisi.|Hindi wasto o hindi suportado ang bersiyon ng na-save na project data. Hindi ito pinalitan.
+440|Dili balido ang na-save nga workspace.|Hindi wasto ang na-save na workspace.
+441|Gi-save|Sine-save
+442|Gi-save ang mga kausaban…|Sine-save ang mga pagbabago…
+443|Gi-save ang diagnostic…|Sine-save ang diagnostic…
+444|Gi-save ang imong check…|Sine-save ang check mo…
+445|Gi-save…|Sine-save…
+446|Walay XP ang scratch runs ug dili kini maihap nga napasar nga coding challenge.|Walang XP ang scratch runs at hindi ito binibilang na naipasang coding challenge.
+447|Pangita og mga challenge|Maghanap ng mga challenge
+448|Pangita og learning paths|Maghanap ng learning paths
+449|Pangita og mga leksiyon|Maghanap ng mga aralin
+450|Pangita og mga leksiyon ug path|Maghanap ng mga aralin at path
+451|Pangita og mga leksiyon, technology, konsepto…|Maghanap ng mga aralin, technology, konsepto…
+452|Kaugalingong report · walay mastery credit|Sariling ulat · walang mastery credit
+453|Ang pagpadala sa request mopakigbahin sa imong gisulat sa naka-configure nga AI provider. Ayaw ilakip ang secrets o pribadong production data. Mahimong masayop ang AI; susiha gamit ang tests. Limitado ang requests sa server.|Ibinabahagi ng request ang isinulat mo sa naka-configure na AI provider. Huwag isama ang secrets o pribadong production data. Maaaring magkamali ang AI; suriin gamit ang tests. Limitado ang requests sa server.
+454|Kinahanglan og lahi nga serbisyo|Kailangan ng hiwalay na serbisyo
+455|Ilahi ang imong nahibaloan ug imong gituohan lang. Unsang usa ka assumption ang masulayan nimo sa gamayng pananglitan?|Ihiwalay ang alam mo sa ipinagpapalagay mo lang. Aling assumption ang masusubukan mo sa maliit na halimbawa?
+456|History sa mga session|History ng mga session
+457|Mode sa session|Mode ng session
+458|Ibutang ang Supabase URL ug publishable key, i-apply ang database migration, ug awtorisahi ang imong account. Tan-awa ang project README para sa setup.|Ilagay ang Supabase URL at publishable key, i-apply ang database migration, at awtorisahan ang account mo. Tingnan ang project README para sa setup.
+459|Settings|Settings
+460|Settings ug preferences|Settings at preferences
+461|Ipakigbahin lang ang gamayng pananglitan nga gikinahanglan sa imong pangutana.|Ibahagi lang ang maliit na halimbawang kailangan para sa tanong mo.
+462|Ang kanunay nga praktis adunay bunga|May bunga ang tuloy-tuloy na praktis
+463|Pag-sign out|Mag-sign out
+464|Nag-sign in…|Nagsa-sign in…
+465|Pagsusi sa kahanas|Pagsusuri ng kasanayan
+466|Laktawi ang pangutana|Laktawan ang tanong
+467|Diretso sa content|Dumiretso sa content
+468|Gamayng sakop. Tinuod nga mga limitasyon. Trabaho nga imong masaysay.|Maliit na saklaw. Totoong limitasyon. Gawang maipapaliwanag mo.
+469|Gagmayng kalampusan nga gipaninguhaan|Maliliit na tagumpay na pinaghirapan
+470|Gagmayng mapuslanong problema. Deterministic tests. Imong kaugalingong pamaagi.|Maliliit na kapaki-pakinabang na problema. Deterministic tests. Sarili mong paraan.
+471|Sulbara ang challenge nga wala ipakita ang solusyon|Lutasin ang challenge nang hindi ipinapakita ang solusyon
+472|Nasulbad nga ikaw ra|Nalutas nang mag-isa
+473|Dili ma-load ang ubang kalihokan:|Hindi ma-load ang ilang aktibidad:
+474|Adunay problema. Palihog sulayi pag-usab.|May problema. Pakisubukan ulit.
+475|Standard error|Standard error
+476|Standard input|Standard input
+477|Standard output|Standard output
+478|Sugdi|Simulan
+479|Sugdi ang diagnostic|Simulan ang diagnostic
+480|Sugdi ang pagkat-on|Simulan ang pag-aaral
+481|Sugdi ang leksiyon|Simulan ang aralin
+482|Sugdi ang session|Simulan ang session
+483|Sugdi sa anaa nga leksiyon sa ubos|Magsimula sa available na aralin sa ibaba
+484|Dili magamit ang storage.|Hindi magamit ang storage.
+485|Gamita ang account storage kung naka-configure ang cloud; kon dili, dinhi lang sa browser. Kinahanglan og sign-in sa cloud. Kaugalingong report ang completion ug dili verified mastery.|Account storage ang gamit kapag naka-configure ang cloud; kung hindi, sa browser lang. Kailangan ng sign-in sa cloud. Sariling ulat ang completion at hindi verified mastery.
+486|Gamita ang account storage kung naka-configure ang cloud; kon dili, dinhi lang sa browser. Kinahanglan og sign-in sa cloud. Walay AI grading o verified mastery. Ayaw pagbutang og mailhang personal nga detalye.|Account storage ang gamit kapag naka-configure ang cloud; kung hindi, sa browser lang. Kailangan ng sign-in sa cloud. Walang AI grading o verified mastery. Huwag maglagay ng makikilalang personal na detalye.
+487|Pinakalig-on nga signal sa sample:|Pinakamalakas na signal sa sample:
+488|Average sa kaugalingong rating|Average ng sariling rating
+489|History sa mga submission|History ng mga submission
+490|Isumite ug baliki|Isumite at balikan
+491|Isumite ang interview|Isumite ang interview
+492|Isumite o isalikway ang kasamtangang session para mabalikan ang daang reports.|Isumite o itapon ang kasalukuyang session para mabalikan ang mga naunang ulat.
+493|Isumite kini nga interview?|Isumite ang interview na ito?
+494|Gisumite|Naisumite
+495|Ang sunod nga runs niini nga session markahan nga naay tabang ug walay XP para sa independent completion.|Ang mga susunod na run sa session na ito ay mamarkahang may tulong at walang XP para sa independent completion.
+496|Ang napasar nga checks magbutang sa reviews sa 3, 7, 14, ug 30 ka adlaw. Ang nasayopang review mopaduol sa sunod ngadto sa sulod sa usa ka adlaw. Walay dugang lesson XP ang balik-balik nga reviews.|Ang mga naipasang check ay nagtatakda ng reviews sa 3, 7, 14, at 30 araw. Inilalapit ng namaling review ang susunod sa loob ng isang araw. Walang dagdag na lesson XP ang paulit-ulit na reviews.
+497|Gisugyot nga architecture|Iminungkahing architecture
+498|Wala pa ma-configure ang Supabase.|Hindi pa naka-configure ang Supabase.
+499|Sumala sa system|Ayon sa system
+500|HIMOA NGA MOLIHOK NGA CODE ANG IMONG NASABTAN|GAWING GUMAGANANG CODE ANG NAUNAWAAN MO
+502|Sulayi ang diagnostic|Subukan ang diagnostic
+503|Sulayi ang diagnostic para mahibalo sa imong sinugdanan. Walay track nga gi-lock sa prerequisites.|Subukan ang diagnostic para malaman ang panimulang antas mo. Walang track na naka-lock sa prerequisites.
+504|Sulayi ang mubo nga diagnostic. Tagsa-tagsa ang baseline ug rekomendasyon sa matag technology.|Subukan ang maikling diagnostic. May sariling baseline at rekomendasyon ang bawat technology.
+505|Technology|Technology
+506|Mga test scenario|Mga test scenario
+507|Kinahanglan pa ayuhon ang tests|Kailangan pang ayusin ang tests
+508|Napasar ang tests|Naipasa ang tests
+509|Angay hinumdoman kini nga konsepto.|Konseptong dapat tandaan ito.
+510|Ang ideya luyo sa code|Ang ideya sa likod ng code
+511|Dili magamit ang opsyonal nga backend. I-deploy ang Vercel functions o gamita ang local API server; frontend lang ang Vite preview.|Hindi magamit ang opsyonal na backend. I-deploy ang Vercel functions o gamitin ang local API server; frontend lang ang Vite preview.
+512|Ang problema|Ang problema
+513|Ang importanteng hinumdoman|Ang mahalagang tandaan
+514|Dili ma-render ang workspace. Wala gi-reset ang imong na-save nga progress.|Hindi ma-render ang workspace. Hindi na-reset ang na-save mong progress.
+515|Klarong mga lagda kini sa pag-iskedyul, dili pagsukod sa imong memorya o dugayng mastery.|Malinaw na tuntunin ito sa pag-iskedyul, hindi pagsukat ng memorya o pangmatagalang mastery mo.
+516|Kini nga mga programming language modagan lang sa lahi nga Docker execution service, walay network ug adunay limits sa CPU, memory, process, oras ug output. I-configure una ang serbisyo sumala sa setup guide. Dili ipadagan sa main application server ang program.|Tumatakbo lang ang mga programming language na ito sa hiwalay na Docker execution service, walang network at may limits sa CPU, memory, process, oras at output. I-configure muna ayon sa setup guide. Hindi pinapatakbo ng main application server ang program.
+517|Ang scores niining tulo ka pangutana kay diagnostic signals, dili pamatuod sa coding mastery. Walay XP, streak credit o lesson completion ang pag-usab.|Diagnostic signals ang scores sa tatlong tanong na ito, hindi patunay ng coding mastery. Walang XP, streak credit o lesson completion sa pag-ulit.
+518|Padayon silang nagkat-on.|Patuloy silang natututo.
+519|Hunahunaa pag-ayo|Pag-isipang mabuti
+520|Hunahunaa. Isulat. Susiha ang imong kaugalingong ebidensya.|Pag-isipan. Isulat. Suriin ang sarili mong ebidensya.
+521|Nagtabang sa imong panghunahuna…|Tinutulungan kang mag-isip…
+522|Dili awtorisado kini nga account niini nga pribadong workspace.|Hindi awtorisado ang account na ito sa pribadong workspace.
+523|Basin nabalhin kini nga leksiyon. Susiha ang anaa nga mga learning path.|Maaaring nailipat ang araling ito. Tingnan ang available na mga learning path.
+524|Nasayop og agi kini nga page.|Naligaw ang page na ito.
+525|Ilisan sa starter ang kasamtangang sulod sa editor. Magpabilin ang na-save nga submission history.|Papalitan ng starter ang kasalukuyang laman ng editor. Mananatili ang na-save na submission history.
+526|Wala pa ma-save kini nga resulta. Ayaw isira ang page aron makasulay pag-usab.|Hindi pa na-save ang resultang ito. Huwag isara ang page para makasubok ulit.
+527|Adunay roadmap kini nga track pero wala pay gipatik nga leksiyon. Sugdi sa usa sa unom ka anaa nga leksiyon samtang gipalapad ang curriculum.|May roadmap ang track na ito pero wala pang nailathalang aralin. Magsimula sa isa sa anim na available na aralin habang pinalalawak ang curriculum.
+528|Karong semanaha:|Ngayong linggo:
+529|Tulo ka piniling pangutana matag session. Opsyonal ang reference sa practice; gitago kini sa timed sessions.|Tatlong piling tanong bawat session. Opsyonal ang reference sa practice; nakatago ito sa timed sessions.
+530|Tulo ka request nahuman sa lahi-lahing han-ay. Unsa ang ibalik sa|Tatlong request ang natapos sa magkakaibang ayos. Ano ang ibabalik ng
+531|Nahurot ang oras|Naubos ang oras
+532|Oras gikan sa gisumite nga sessions|Oras mula sa mga naisumiteng session
+533|Interview nga naay timer|Interview na may timer
+534|Kinatibuk-ang XP|Kabuuang XP
+535|Sulayi ang reflection nga naay giya, walay AI|Subukan ang reflection na may gabay, walang AI
+536|Sulayi pag-usab|Subukan ulit
+537|Sulayi ang laing lebel o pulong sa pagpangita.|Subukan ang ibang antas o salitang hahanapin.
+538|Sulayi ang laing technology o haw-asa ang filters.|Subukan ang ibang technology o alisin ang filters.
+539|Sulayi mismo|Subukan mismo
+540|Isulat una ang imong pamaagi sa dili pa ablihan ang unang hint.|Isulat muna ang paraan mo bago buksan ang unang hint.
+541|Sulayi kini sa imong environment, dayon ablihi ang coding challenges para sa executable nga praktis. Dili ipadagan ang code examples niini nga page.|Subukan ito sa environment mo, saka buksan ang coding challenges para sa executable na praktis. Hindi pinapatakbo ang code examples sa page na ito.
+542|Duha ka pangutana para masusi ang koneksyon sa mga ideya. Pasara ang duha para mahuman ang leksiyon. 50 XP sa unang pagkahuman; walay dugang XP sa balik nga review.|Dalawang tanong para suriin ang ugnayan ng mga ideya. Ipasa ang dalawa para matapos ang aralin. 50 XP sa unang pagkumpleto; walang dagdag na XP sa muling review.
+543|Walay tubag|Walang sagot
+544|Sabta ang konsepto|Unawain ang konsepto
+545|Wala mailhi ang assessment technology.|Hindi kilala ang assessment technology.
+546|Wala pa ma-save ang draft|Hindi pa na-save ang draft
+547|Praktis nga walay timer|Praktis na walang timer
+548|Gamita ang “I-save ang leksiyon” aron matipigan kini dinhi.|Gamitin ang “I-save ang aralin” para maitabi ito rito.
+549|Tan-awa ang tanang path|Tingnan ang lahat ng path
+550|Tan-awa ang mga path|Tingnan ang mga path
+551|Tan-awa ang gisumite nga code|Tingnan ang naisumiteng code
+552|Makita nga test cases|Mga nakikitang test case
+553|WORKSPACE|WORKSPACE
+554|Organisado, espesipiko ug masabtan ba ang akong tubag?|Organisado, tiyak at madaling maunawaan ba ang sagot ko?
+555|Bantayi kini|Bantayan ito
+556|Maayong pag-abot|Maligayang pagdating
+557|Maayong pagbalik.|Maligayang pagbabalik.
+558|Unsa ang imong gisulayan pagsabot?|Ano ang sinusubukan mong unawain?
+559|Unsa ang pinakagamay nga input nga makapakita sa problema? Sunda ang state sa matag lakang.|Ano ang pinakamaliit na input na nagpapakita ng problema? Sundan ang state sa bawat hakbang.
+560|Unsa unta ang mahitabo? Isulat una ang gipaabot nga behavior sa dili pa tan-awon ang implementation.|Ano ang dapat mangyari? Isulat muna ang inaasahang behavior bago tingnan ang implementation.
+561|Unsa ang among itawag nimo?|Ano ang itatawag namin sa iyo?
+562|Unsa ang imong mahimo human niini|Ano ang magagawa mo pagkatapos nito
+563|Workspace|Workspace
+564|Navigation sa workspace|Navigation ng workspace
+566|IMONG PANAW|PAGLALAKBAY MO
+567|IMONG DAGAN|SARILI MONG BILIS
+568|IMONG PERSONAL NGA DEVELOPER WORKSPACE|PERSONAL MONG DEVELOPER WORKSPACE
+569|IMONG PRIBADONG LUGAR SA PAGKAT-ON|PRIBADO MONG LUGAR SA PAG-AARAL
+570|IMONG SINUGDANAN|PANIMULA MO
+571|UNA ANG IMONG PANGHUNAHUNA|UNA ANG PAG-IISIP MO
+572|Ikaw mismo ang mo-assess sa mga tubag. Ang average naghulagway lang sa imong ratings, dili sa pagkasakto, pagkaandam sa trabaho o mastery.|Ikaw mismo ang susuri sa mga sagot. Inilalarawan lang ng average ang ratings mo, hindi ang kawastuhan, kahandaan sa trabaho o mastery.
+573|Gikumpirma nimo nga ikaw ang naghimo ug nagsusi sa checklist. Report lang nimo kini; dili code review, automatic test result o sertipikasyon sa mastery.|Kinukumpirma mong ikaw ang gumawa at nagsuri ng checklist. Ulat mo lang ito; hindi code review, automatic test result o sertipikasyon ng mastery.
+574|Imong tubag:|Sagot mo:
+575|Na-save ang imong pagsulay. Baliki ang pagsaysay ug pananglitan, dayon sulayi pag-usab.|Na-save ang pagsubok mo. Balikan ang paliwanag at halimbawa, saka subukan ulit.
+576|Dili ma-load ang imong coding workspace|Hindi ma-load ang coding workspace mo
+577|Mobalik ang nahuman nimong mga leksiyon sumala sa spaced review schedule.|Babalik ang mga natapos mong aralin ayon sa spaced review schedule.
+578|Tangtangon ang kasamtangan nimong mga tubag. Dili na kini mabalik.|Aalisin ang kasalukuyan mong mga sagot. Hindi na ito maibabalik.
+579|Magsugod ang history sa una nimong run.|Magsisimula ang history sa una mong run.
+580|Dinhi makita ang una nimong gisumite nga interview, apil ang mga tubag ug kaugalingong assessment.|Dito makikita ang una mong naisumiteng interview, kasama ang mga sagot at sariling assessment.
+581|Imong panaw. Imong dagan.|Paglalakbay mo. Sarili mong bilis.
+582|Na-save ang knowledge check. Balik sulod sa tulo ka adlaw para sa review, ug praktisa ang exercise para mas molalom ang pagsabot.|Na-save ang knowledge check. Bumalik sa loob ng tatlong araw para sa review, at praktisin ang exercise para lumalim ang pag-unawa.
+583|Miaging 12 ka semana · lesson ug coding attempts|Nakaraang 12 linggo · lesson at coding attempts
+584|Imong roadmap sa pagkat-on|Roadmap mo sa pag-aaral
+585|Klarong pagtan-aw sa imong pagkat-on|Malinaw na pagtingin sa pag-aaral mo
+586|Dinhi makita ang imong lesson checks ug coding attempts.|Dito makikita ang lesson checks at coding attempts mo.
+587|Imong ngalan|Pangalan mo
+588|Sunod nimong pokus|Susunod mong pokus
+589|Imong sunod nga maayong lakang|Susunod mong magandang hakbang
+590|Magsugod sa sunod nimong session|Magsisimula sa susunod mong session
+591|Imong sunod nga mapuslanong lakang|Susunod mong kapaki-pakinabang na hakbang
+592|Imong notes|Notes mo
+593|Imong library sa mga konseptong angay balikan.|Library mo ng mga konseptong dapat balikan.
+594|Dili ma-load ang imong progress|Hindi ma-load ang progress mo
+595|Na-save sa imong account ang progress ug gipanalipdan sa Row Level Security.|Naka-save sa account mo ang progress at protektado ng Row Level Security.
+596|Imong reflection report|Reflection report mo
+597|Imong tubag|Sagot mo
+598|Wala mapulihi ang imong na-save nga data.|Hindi napalitan ang na-save mong data.
+599|Wala mapulihi ang imong na-save nga history.|Hindi napalitan ang na-save mong history.
+600|Gipadagan ang imong solusyon sa isolated worker…|Pinapatakbo ang solusyon mo sa isolated worker…
+601|Klarong mapa sa imong stack. Sugdi asa nimo kinahanglan.|Malinaw na mapa ng stack mo. Magsimula kung saan mo kailangan.
+602|Imong kaugalingong assessment|Sarili mong assessment
+603|Imong gisumite nga tubag|Naisumite mong sagot
+604|Ma-lock ang imong mga tubag, apil ang walay sulod. Dayon maablihan ang references ug self-assessment rubric.|Mala-lock ang mga sagot mo, kasama ang mga blangko. Pagkatapos, mabubuksan ang references at self-assessment rubric.
+605|natubag|nasagot
+606|natubag · Tan-awa ang report|nasagot · Tingnan ang ulat
+607|natubag. Pagpili og usa ka tubag matag pangutana.|nasagot. Pumili ng isang sagot bawat tanong.
+612|ka pagsulay|pagsubok
+613|ka leksiyon nga anaa|available na aralin
+618|ka check nga narekord|check na naitala
+619|ka check pa ang kulang. Ang pagtangtang sa check moabli pag-usab sa nahuman nga project.|check pa ang kulang. Ang pag-uncheck ay muling magbubukas sa natapos na project.
+620|ka check ·|check ·
+625|ka adlaw|araw
+628|angay balikan|dapat balikan
+629|editor|editor
+637|nasulbad nga ikaw ra|nalutas nang mag-isa
+638|learning path|learning path
+640|ka topic nga nasayopan sa checks · Ablihi ang reviews|topic na namali sa checks · Buksan ang reviews
+642|ka leksiyon|aralin
+645|minutos nga milabay|minutong lumipas
+646|minutos kada adlaw|minuto araw-araw
+647|minutos kay maayong sugod.|minuto ay magandang simula.
+648|minutos karon|minuto ngayon
+655|sa|sa
+675|napasar nga check|naipasang check
+676|problema|problema
+678|ka narekord nga pagsulay|naitalang pagsubok
+679|mga resulta|mga resulta
+681|?|?
+688|ka test|test
+689|ka test nga napasar|test na naipasa
+696|mas pagsabot.|mas pag-unawa.
+699|← Tanang project|← Lahat ng project

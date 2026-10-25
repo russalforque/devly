@@ -1,0 +1,25 @@
+-- MANUAL TEMPLATE ONLY: never a migration, never part of seed.sql.
+-- 1. Create/invite your real account through trusted Supabase Auth administration.
+--    Public signup is disabled in local config; disable it in hosted Auth too.
+-- 2. Copy that existing account's UUID from Authentication > Users.
+-- 3. Replace <YOUR_EXISTING_AUTH_USER_UUID> below, review, uncomment the block,
+--    and run it as postgres in the SQL Editor or a trusted administrative connection.
+--    Never place an admin/service-role key or database password in the frontend.
+-- 4. Sign in as that account. All other accounts remain unauthorized.
+--
+-- An empty private.owner deliberately denies all application access.
+-- This template does not create an Auth user and contains no fake owner UUID.
+-- It deliberately fails if an owner already exists: no silent owner replacement.
+--
+-- begin;
+-- insert into private.owner (singleton, user_id)
+-- values (true, '<YOUR_EXISTING_AUTH_USER_UUID>'::uuid);
+--
+-- insert into public.profiles (id, display_name, daily_goal_minutes)
+-- select user_id, 'Learner', 20 from private.owner where singleton
+-- on conflict (id) do nothing;
+-- commit;
+--
+-- Owner rotation is a separate administrative operation. Back up personal data,
+-- review its ownership/FKs, and explicitly replace the owner only after deciding
+-- how to migrate it. Changing private.owner does not transfer existing rows.

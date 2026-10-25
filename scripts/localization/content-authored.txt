@@ -1,0 +1,405 @@
+0|Effects nga walay dili gustong epekto|Effects na walang hindi gustong epekto
+1|Sabta ang dependencies, cleanup ug lifecycle sa effect.|Unawain ang dependencies, cleanup at lifecycle ng effect.
+2|I-synchronize ang component sa external system nga walay leaked connections o karaang values.|I-synchronize ang component sa external system nang walang leaked connections o lumang values.
+3|Functional components|Functional components
+4|=|=
+5|JavaScript closures|JavaScript closures
+6|Ang effect mo-synchronize sa component sa butang gawas sa React: connection, browser event o timer. Ang derived values kasagarang kalkulahon sa render; ang aksyon tungod sa click ibutang sa event handler.|Sini-synchronize ng effect ang component sa bagay sa labas ng React: connection, browser event o timer. Karaniwang kinakalkula sa render ang derived values; ang aksyon mula sa click ay ilagay sa event handler.
+7|Ilakip sa dependency list ang matag reactive value nga gibasa sa effect. Gigamit sa React ang Object.is sa pagtandi. Una modagan pag-usab tungod sa nausab nga dependencies, i-clean up ang miaging effect; mahitabo usab kini sa unmount.|Isama sa dependency list ang bawat reactive value na binabasa ng effect. Object.is ang gamit ng React sa paghahambing. Bago muling tumakbo dahil sa nagbagong dependencies, nililinis ang naunang effect; ginagawa rin ito sa unmount.
+8|Sa development, modagan ang Strict Mode og dugang nga setup-and-cleanup cycle aron makita ang kulang nga cleanup. Pares ang setup ug cleanup, dili code nga kinahanglan kausa ra modagan.|Sa development, nagpapatakbo ang Strict Mode ng dagdag na setup-and-cleanup cycle para makita ang kulang na cleanup. Magkapareha ang setup at cleanup, hindi code na dapat isang beses lang tumakbo.
+9|Ang support dashboard mobalhin tali sa chat rooms. Kada room adunay heartbeat timer. Sa pagbalhin, hunonga ang daang timer aron walay mensahe nga maangkon sa room nga gibiyaan.|Lumalipat ang support dashboard sa iba't ibang chat room. Bawat room ay may heartbeat timer. Sa paglipat, ihinto ang lumang timer para walang mensaheng maiugnay sa room na iniwan.
+10|Ang [] samtang gibasa ang roomId magbilin sa timer sa unang room.|Ang [] habang binabasa ang roomId ay mag-iiwan sa timer sa unang room.
+11|Ang pagpasagad sa dependency linter makatago sa stale closure bugs.|Naitatago ng pagbalewala sa dependency linter ang stale closure bugs.
+12|Kung walay cleanup, magpadayon ang timers human sa unmount.|Kung walang cleanup, magpapatuloy ang timers matapos ang unmount.
+13|Sa imong React project, idugang kini nga component ug button nga mousab sa roomId. Tagnaa unsang room ang i-log sa sunod nga heartbeat, dayon susiha. I-unmount ug tinoa nga mihunong ang logging.|Sa React project mo, idagdag ang component na ito at button na nagpapalit ng roomId. Hulaan kung aling room ang ilo-log sa susunod na heartbeat, saka suriin. I-unmount at tiyaking huminto ang logging.
+14|Ang roomId nausab gikan sa "general" ngadto sa "support". Unsay angay mahitabo?|Nagbago ang roomId mula "general" tungo sa "support". Ano ang dapat mangyari?
+15|Magsugod og ikaduhang timer tapad sa una|Magsimula ng ikalawang timer kasabay ng una
+16|Hunongon ang daang timer, unya magsugod og timer para sa support|Ihinto ang lumang timer, saka magsimula ng timer para sa support
+17|Ipadayon ang daang timer kay mounted pa ang component|Ituloy ang lumang timer dahil mounted pa ang component
+18|Ang nausab nga dependency maoy hinungdan sa cleanup sa daang effect una sa sunod nga setup.|Ang nagbagong dependency ang dahilan ng cleanup ng naunang effect bago ang susunod na setup.
+19|Ngano nga makapahinungod og bug ang empty dependency array dinhi?|Bakit nagdudulot ng bug ang empty dependency array dito?
+20|Kinahanglan og effect ang timers sa matag render|Kailangan ng timers ang effect sa bawat render
+21|Dili gyod i-clean up sa React ang effects nga walay dependencies|Hindi kailanman nililinis ng React ang effects na walang dependencies
+22|Ang timer callback nagkupot sa unang roomId sa iyang closure|Hawak ng timer callback ang unang roomId sa closure nito
+23|Kung walay dependency changes, dili mo-synchronize pag-usab ang effect sa pag-usab sa roomId.|Kung walang dependency changes, hindi muling magsi-synchronize ang effect kapag nagbago ang roomId.
+24|Gamita ang effects para sa external synchronization. Ideklara ang reactive dependencies ug ipabalik sa cleanup ang gihimo sa setup. Ang pagpasa niini nagsusi sa nahinumdomang konsepto, dili hands-on React mastery.|Gamitin ang effects para sa external synchronization. Ideklara ang reactive dependencies at ipabalik sa cleanup ang ginawa ng setup. Sinusuri ng pagpasa rito ang natandaang konsepto, hindi hands-on React mastery.
+25|Custom hooks ug reusable synchronization|Custom hooks at reusable synchronization
+26|Dili tugoti ang impossible states|Huwag payagan ang impossible states
+27|I-model ang API request gamit ang discriminated unions.|I-model ang API request gamit ang discriminated unions.
+28|Ilisi ang dili klarong optional fields og union nga luwas ma-narrow sa TypeScript.|Palitan ang malabong optional fields ng union na ligtas na ma-narrow ng TypeScript.
+29|=|=
+30|=|=
+31|=|=
+32|Ang object nga adunay loading, data ug error fields mahimong magrepresentar sa nagkasumpaking kombinasyon. Ang discriminated union mohatag og lahi nga literal tag sa matag balidong state.|Maaaring magrepresenta ng magkakasalungat na kombinasyon ang object na may loading, data at error fields. Nagbibigay ang discriminated union ng natatanging literal tag sa bawat wastong state.
+33|Susiha ang shared discriminant una basahon ang state-specific fields. I-narrow sa TypeScript ang union sa matag branch. Compile-time nga garantiya kini; kinahanglan gihapon og runtime validation ang external JSON.|Suriin ang shared discriminant bago basahin ang state-specific fields. Nini-narrow ng TypeScript ang union sa bawat branch. Compile-time na garantiya ito; kailangan pa rin ng runtime validation ang external JSON.
+34|Ang exhaustive switch mahimong mogamit sa never aron mailhan ang kulang nga branch sa pagdugang og state. Likayi ang assertions nga mopahilom lang sa compiler.|Maaaring gumamit ng never ang exhaustive switch para makita ang kulang na branch kapag nagdagdag ng state. Iwasan ang assertions na nagpapatahimik lang sa compiler.
+35|Kinahanglan mailhan sa user profile panel ang loading, success ug failure. Dili kini mobasa og profile samtang nag-load pa.|Dapat makilala ng user profile panel ang loading, success at failure. Hindi ito dapat magbasa ng profile habang naglo-load pa.
+36|Ang data! molaktaw sa proteksyon nga imong gikinahanglan.|Nilalaktawan ng data! ang proteksyong kailangan mo.
+37|Dili mo-validate ang TypeScript type sa server response sa runtime.|Hindi vine-validate ng TypeScript type ang server response sa runtime.
+38|Ang lahi-lahing booleans makapakita nga loading ug success sa samang higayon.|Maaaring magpakita ang magkakahiwalay na boolean ng loading at success nang sabay.
+39|Idugang ang idle state ug tugoti ang compiler nga motudlo sa kulang nga branch. Dayon paghimo og runtime guard nga mosusi nga string ang name sa nadawat nga profile.|Idagdag ang idle state at hayaang tukuyin ng compiler ang kulang na branch. Saka gumawa ng runtime guard na susuri kung string ang name ng natanggap na profile.
+40|Unsay makapahimo sa compiler nga luwas basahon ang state.data?|Ano ang nagpapahintulot sa compiler na ligtas na basahin ang state.data?
+41|Pagsusi sa state.status === "success"|Pagsuri sa state.status === "success"
+42|Pag-cast sa state isip Profile|Pag-cast sa state bilang Profile
+43|Paghimog optional sa data sa matag state|Paggawang optional sa data sa bawat state
+44|Ang literal nga status mo-narrow sa union ngadto sa member nga adunay data field.|Nini-narrow ng literal na status ang union sa member na may data field.
+45|Ang pag-type sa response.json() isip Profile mo-validate ba sa sulod niini?|Vine-validate ba ng pag-type sa response.json() bilang Profile ang laman nito?
+46|Oo, awtomatikong susihon sa TypeScript ang JSON|Oo, awtomatikong sinusuri ng TypeScript ang JSON
+47|Dili, kinahanglan gihapon og runtime validation ang nadawat nga data|Hindi, kailangan pa rin ng runtime validation ang natanggap na data
+48|Sa strict mode ra|Sa strict mode lang
+49|Mawala ang TypeScript types sa runtime. I-validate ang dili kasaligan nga data sa boundary.|Nawawala ang TypeScript types sa runtime. I-validate ang hindi pinagkakatiwalaang data sa boundary.
+50|Klaroha ang balidong states. I-narrow una basahon ang fields, ug i-validate ang external input sa runtime.|Linawin ang mga wastong state. I-narrow bago basahin ang fields, at i-validate ang external input sa runtime.
+51|Generics ug reusable result types|Generics at reusable result types
+52|Ihan-ay ang async nga trabaho|Ayusin ang async na trabaho
+53|Tuyoa ang pagpili sa concurrency ug atubanga ang failures.|Sadyain ang pagpili ng concurrency at pangasiwaan ang failures.
+54|Ipadagan nga dungan ang independent operations samtang gipreserbar ang han-ay sa resulta ug gisabot ang rejection.|Patakbuhin nang sabay ang independent operations habang pinapanatili ang ayos ng resulta at inuunawa ang rejection.
+55|=|=
+56|=|=
+57|=|=
+58|Ang pag-await sa matag independent operation sulod sa loop mohimo niini nga sunod-sunod. Ang pag-map sa inputs ngadto sa promises mopasugod niini una pa i-await ang hiniusang resulta.|Ginagawang sunod-sunod ng pag-await sa bawat independent operation sa loop ang trabaho. Sinisimulan ng pag-map ng inputs sa promises ang mga ito bago i-await ang pinagsamang resulta.
+59|Ibalik sa Promise.all ang resulta sumala sa han-ay sa input, bisan unsa pay naunang nahuman. Mo-reject kini kung adunay input promise nga mo-reject; dili niini kanselahon ang uban.|Ibinabalik ng Promise.all ang resulta ayon sa ayos ng input, kahit alin pa ang unang matapos. Nagra-reject ito kapag may input promise na nag-reject; hindi nito kinakansela ang iba.
+60|Gamita ang Promise.allSettled kung kinahanglan nimo ang matag resulta. Sa daghang inputs, butangi og concurrency limit imbis liboan ka request dayon.|Gamitin ang Promise.allSettled kung kailangan mo ang bawat resulta. Sa maraming input, maglagay ng concurrency limit sa halip na libu-libong request agad.
+61|Kinahanglan nimo ang tulo ka independent account summary sa dashboard. Sugdi ang reads nga dungan apan ipares ang matag resulta sa orihinal nga account ID.|Kailangan mo ng tatlong independent account summary sa dashboard. Simulan ang reads nang sabay pero itugma ang bawat resulta sa orihinal na account ID.
+62|Dili i-await sa forEach ang async callback.|Hindi ina-await ng forEach ang async callback.
+63|Dili kanselahon sa Promise.all ang pending requests sa rejection.|Hindi kinakansela ng Promise.all ang pending requests kapag may rejection.
+64|Ang concurrency nga walay limit mahimong maka-overload sa serbisyo o moigo sa rate limits.|Maaaring mag-overload ng serbisyo o umabot sa rate limits ang concurrency na walang limit.
+65|Ilisi ang fetch og promises nga ma-resolve human sa lahi-lahing delay. Susiha ang han-ay sa resulta. Ipa-reject ang usa, dayon itandi ang Promise.all ug Promise.allSettled.|Palitan ang fetch ng promises na mare-resolve matapos ang iba't ibang delay. Suriin ang ayos ng resulta. Ipa-reject ang isa, saka ihambing ang Promise.all at Promise.allSettled.
+66|Nauna og human ang ikaduhang request. Asa ang resulta niini sa Promise.all output?|Naunang natapos ang ikalawang request. Nasaan ang resulta nito sa Promise.all output?
+67|Una, kay nauna og human|Una, dahil naunang natapos
+68|Ikaduha, sumala sa posisyon sa input|Ikalawa, ayon sa posisyon sa input
+69|Dili matag-an ang posisyon|Hindi mahuhulaan ang posisyon
+70|Gipreserbar sa Promise.all ang han-ay sa inputs.|Pinapanatili ng Promise.all ang ayos ng inputs.
+71|Usa ka promise mi-reject. Unsay mahitabo sa ubang requests?|Nag-reject ang isang promise. Ano ang mangyayari sa ibang requests?
+72|Awtomatiko silang makansela|Awtomatiko silang makakansela
+73|Mosugod sila pag-usab|Magsisimula sila ulit
+74|Magpadayon sila gawas kon klaro nimong kanselahon|Magpapatuloy sila maliban kung tahasan mong kanselahin
+75|Dili cancellation ang aggregate rejection. Makakansela ang AbortController sa compatible operations.|Hindi cancellation ang aggregate rejection. Kayang kanselahin ng AbortController ang compatible operations.
+76|Ipahiangay ang concurrency sa dependencies. Tipigi ang impormasyon sa failure ug ayaw hunahunaa nga makakansela ang rejection sa trabaho.|Iangkop ang concurrency sa dependencies. Panatilihin ang impormasyon ng failure at huwag ipagpalagay na kinakansela ng rejection ang trabaho.
+77|Cancellation ug async race conditions|Cancellation at async race conditions
+78|Ang misteryo sa nawalang rows|Ang misteryo ng nawawalang rows
+79|Sabta kung giunsa pag-usab sa filters ang LEFT JOIN.|Unawain kung paano binabago ng filters ang LEFT JOIN.
+80|Ilakip ang parent records nga walay katugbang nga child rows samtang husto ang paggamit sa child filters.|Isama ang parent records na walang katugmang child rows habang tama ang paggamit sa child filters.
+81|SELECT ug WHERE|SELECT at WHERE
+82|Primary ug foreign keys|Primary at foreign keys
+83|Basic joins|Basic joins
+84|Ang LEFT JOIN magpabilin sa matag left-side row bisan walay katugbang sa tuo. NULL ang gamiton para sa kulang nga right-side values.|Pinapanatili ng LEFT JOIN ang bawat left-side row kahit walang katugma sa kanan. NULL ang ginagamit para sa nawawalang right-side values.
+85|Ang WHERE sa right-side column mahimong motangtang sa walay katugbang nga rows. Ang pagtandi sa NULL moresulta og unknown, nga dili molusot sa WHERE.|Maaaring alisin ng WHERE sa right-side column ang mga row na walang katugma. Ang paghahambing sa NULL ay nagreresulta sa unknown, na hindi pumapasa sa WHERE.
+86|Para paid orders lang ang maihap pero magpabilin ang tanang customer, ibutang sa ON ang paid condition ug ihapa ang non-nullable order key, dili COUNT(*).|Para paid orders lang ang mabilang pero manatili ang lahat ng customer, ilagay sa ON ang paid condition at bilangin ang non-nullable order key, hindi COUNT(*).
+87|Kinahanglan sa sales report ang customers nga walay paid orders. Ang status filter sa WHERE aksidenteng motangtang nila.|Kailangan ng sales report ang customers na walang paid orders. Aksidenteng inaalis sila ng status filter sa WHERE.
+88|Ang WHERE orders.status = 'paid' motangtang sa customers nga walay katugbang.|Inaalis ng WHERE orders.status = 'paid' ang customers na walang katugma.
+89|Ihap sa COUNT(*) ang gipabiling customer row bisan walay order.|Binibilang ng COUNT(*) ang pinanatiling customer row kahit walang order.
+90|Ang pag-join sa daghang one-to-many tables mahimong mopadaghan sa rows una sa aggregation.|Maaaring magparami ng rows bago ang aggregation ang pag-join ng maraming one-to-many table.
+91|Paghimo og duha ka customer ug usa ka paid order para sa una. Tagnaa ang duha ka result row. Ibalhin sa WHERE ang status filter ug isaysay unsang row ang mawala.|Gumawa ng dalawang customer at isang paid order para sa una. Hulaan ang dalawang result row. Ilipat sa WHERE ang status filter at ipaliwanag kung aling row ang mawawala.
+92|Unsa ang ibalik sa COUNT(orders.id) sa customer nga walay paid orders?|Ano ang ibabalik ng COUNT(orders.id) sa customer na walang paid orders?
+93|=|=
+94|=|=
+95|=|=
+96|Dili iapil sa COUNT(expression) ang NULL, busa zero ang kontribusyon sa walay katugbang nga row.|Hindi isinasama ng COUNT(expression) ang NULL, kaya zero ang ambag ng row na walang katugma.
+97|Asa ibutang ang paid-order filter aron magpabilin ang matag customer?|Saan ilalagay ang paid-order filter para manatili ang bawat customer?
+98|Sa JOIN ON condition|Sa JOIN ON condition
+99|Sa WHERE human sa join|Sa WHERE pagkatapos ng join
+100|Sa ORDER BY|Sa ORDER BY
+101|Gilimitahan sa ON ang matches samtang gipabilin sa LEFT JOIN ang customer row.|Nililimitahan ng ON ang matches habang pinapanatili ng LEFT JOIN ang customer row.
+102|Ilahi ang matching conditions sa result filters. Ihapa ang child key kung zero ang ihatag sa walay katugbang nga parents.|Ihiwalay ang matching conditions sa result filters. Bilangin ang child key kung zero ang dapat ibigay ng parents na walang katugma.
+103|Query plans ug composite indexes|Query plans at composite indexes
+104|Himoang kontrata ang pagdumala sa API failures|Gawing kontrata ang paghawak sa API failures
+105|Atubanga ang HTTP errors nga walay pagtago sa mapuslanong context.|Pangasiwaan ang HTTP errors nang hindi itinatago ang kapaki-pakinabang na context.
+106|Ilahi ang transport failures, HTTP errors ug invalid response bodies sa API boundary.|Ihiwalay ang transport failures, HTTP errors at invalid response bodies sa API boundary.
+107|=|=
+108|=|=
+109|=|=
+110|Mo-reject ang fetch sa pipila ka transport failure, apan ang HTTP 404 o 500 kasagarang ma-resolve ngadto sa Response. Susiha ang response.ok una isipon nga malampuson.|Nagra-reject ang fetch sa ilang transport failure, pero ang HTTP 404 o 500 ay karaniwang nare-resolve sa Response. Suriin ang response.ok bago ituring na matagumpay.
+111|Mahimong mapakyas ang pagbasa sa JSON bisan malampuson ang HTTP status. Lahi ang runtime validation ug parsing: puwedeng sakto ang JSON syntax pero sayop ang porma.|Maaaring mabigo ang pagbasa ng JSON kahit matagumpay ang HTTP status. Magkaiba ang runtime validation at parsing: puwedeng tama ang JSON syntax pero mali ang hugis.
+112|Gamita ang makanunayon ug luwas nga error messages sa UI boundary. Tipigi ang diagnostic context sa developers nga walay pagbutyag sa credentials o sensitibong response bodies.|Gumamit ng pare-pareho at ligtas na error messages sa UI boundary. Panatilihin ang diagnostic context para sa developers nang hindi inilalantad ang credentials o sensitibong response bodies.
+113|Ang inventory view nagpakita og undefined human sa 404. Hatagi kini og klarong kontrata: ibalik ang balidong quantity o ilabay ang makahuloganong error.|Nagpapakita ang inventory view ng undefined matapos ang 404. Bigyan ito ng malinaw na kontrata: ibalik ang wastong quantity o mag-throw ng makahulugang error.
+114|Paghunahuna nga ang resolved fetch kay HTTP success.|Pag-aakalang HTTP success ang resolved fetch.
+115|Pag-isip nga validated application data na ang parsed JSON.|Pag-aakalang validated application data na ang parsed JSON.
+116|Pag-retry sa matag failure, apil ang permanenteng 400-level errors.|Pag-retry sa bawat failure, kasama ang permanenteng 400-level errors.
+117|Ilista ang behavior sa function alang sa network failure, 404, malformed JSON, negative quantity ug balidong zero quantity. Pilia unsa ang angay i-retry sa UI.|Ilista ang behavior ng function para sa network failure, 404, malformed JSON, negative quantity at wastong zero quantity. Piliin kung alin ang dapat i-retry ng UI.
+118|Giunsa kasagaran sa fetch ang server response nga status 500?|Paano karaniwang hinahawakan ng fetch ang server response na status 500?
+119|Ma-resolve sa Response nga false ang ok|Mare-resolve sa Response na false ang ok
+120|Kanunay kini mo-reject|Lagi itong nagre-reject
+121|Awtomatikong mo-retry tulo ka beses|Awtomatikong nagre-retry nang tatlong beses
+122|Ang HTTP error statuses makahimo gihapon og Response objects. Ang application maoy mosusi sa status.|Gumagawa pa rin ng Response objects ang HTTP error statuses. Ang application ang sumusuri sa status.
+123|Ngano susihon ang quantity human sa JSON parsing?|Bakit susuriin ang quantity matapos ang JSON parsing?
+124|Strings ra ang gisuportahan sa JSON|Strings lang ang sinusuportahan ng JSON
+125|Ang balidong JSON mahimong sayop ang domain shape o value|Maaaring mali ang domain shape o value ng wastong JSON
+126|Gigarantiya sa response.ok ang positibong quantity|Ginagarantiya ng response.ok ang positibong quantity
+127|Dili ipatuman sa syntax parsing ang imong domain contract.|Hindi ipinapatupad ng syntax parsing ang domain contract mo.
+128|Ilahi ang transport, HTTP, parsing ug domain failures. Klaroha ang kontrata sa caller.|Ihiwalay ang transport, HTTP, parsing at domain failures. Linawin ang kontrata sa caller.
+129|Server-side validation ug structured error responses|Server-side validation at structured error responses
+130|Luwas nga pag-undo. Tipigi ang history.|Ligtas na pag-undo. Panatilihin ang history.
+131|Pilia ang hustong recovery tool para sa shared branch.|Piliin ang tamang recovery tool para sa shared branch.
+132|Isaysay kanus-a i-revert ang shared commit ug unsaon pagsusi sa history una mag-recover.|Ipaliwanag kung kailan ire-revert ang shared commit at paano suriin ang history bago mag-recover.
+133|=|=
+134|=|=
+135|Working tree ug staging area|Working tree at staging area
+136|Ang revert mohimo og bag-ong commit nga mosukwahi sa kausaban sa daang commit. Gipreserbar niini ang history, busa mapuslanon sa kausaban nga na-share na sa teammates.|Gumagawa ang revert ng bagong commit na bumabaligtad sa pagbabago ng naunang commit. Pinapanatili nito ang history, kaya kapaki-pakinabang sa pagbabagong na-share na sa teammates.
+137|Ibalhin sa reset ang branch reference. Ang --hard mo-overwrite usab sa index ug working tree, busa mahimong mawala ang uncommitted changes. Ang pag-usab sa published branch mahimong makasamok sa collaborators.|Inililipat ng reset ang branch reference. Ino-overwrite din ng --hard ang index at working tree, kaya maaaring mawala ang uncommitted changes. Maaaring makaabala sa collaborators ang pagbabago ng published branch.
+138|Susiha una ang status ug history. Gamita ang reflog sa pagpangita sa bag-ong lokal nga reference movements aron ma-recover ang nawalang commit. Lokal ug adunay retention limits ang reflogs; dili kini kapuli sa backups.|Suriin muna ang status at history. Gamitin ang reflog para hanapin ang kamakailang lokal na reference movements at ma-recover ang nawawalang commit. Lokal at may retention limits ang reflogs; hindi ito kapalit ng backups.
+139|Nadaot ang shared main branch tungod sa gamayng configuration change. Kinahanglan og reviewable nga pagbalik nga dili motangtang sa commits sa uban.|Nasira ang shared main branch dahil sa maliit na configuration change. Kailangan ng reviewable na pagbalik na hindi nag-aalis ng commits ng iba.
+140|Paggamit sa reset --hard nga wala pa masusi ang uncommitted changes.|Paggamit ng reset --hard bago suriin ang uncommitted changes.
+141|Pag-force-push sa nausab nga shared history nga walay koordinasyon.|Pag-force-push ng binagong shared history nang walang koordinasyon.
+142|Pagdahom nga walay conflict kanunay ang revert.|Pag-asang laging walang conflict ang revert.
+143|Sa temporaryong repository, i-commit ang duha ka gagmayng kausaban. I-revert ang una ug susiha ang bag-ong history. Isaysay ngano makita gihapon ang orihinal nga commit.|Sa pansamantalang repository, i-commit ang dalawang maliit na pagbabago. I-revert ang una at suriin ang bagong history. Ipaliwanag kung bakit nakikita pa rin ang orihinal na commit.
+144|Unsay kasagarang idugang sa git revert sa imong branch?|Ano ang karaniwang idinadagdag ng git revert sa branch mo?
+145|Wala; tangtangon niini ang daang commit|Wala; binubura nito ang lumang commit
+146|Bag-ong commit nga mobalik sa miaging kausaban|Bagong commit na bumabaligtad sa naunang pagbabago
+147|Bag-ong remote repository|Bagong remote repository
+148|Irekord sa revert ang baliktad nga kausaban sa bag-ong commit samtang gitipigan ang daang history.|Itinatala ng revert ang baligtad na pagbabago sa bagong commit habang pinapanatili ang dating history.
+149|Unsa ang pangunang risgo sa reset --hard kung adunay uncommitted changes?|Ano ang pangunahing panganib ng reset --hard kapag may uncommitted changes?
+150|Tangtangon niini ang tanang remote branch|Binubura nito ang lahat ng remote branch
+151|I-disable niini ang reflog|Dini-disable nito ang reflog
+152|Mahimo nitong ma-overwrite ang uncommitted changes sa tracked files|Maaari nitong ma-overwrite ang uncommitted changes sa tracked files
+153|I-reset sa hard mode ang index ug working tree, nga mahimong makawala sa uncommitted work.|Nire-reset ng hard mode ang index at working tree, na maaaring mag-alis ng uncommitted work.
+154|Susiha una. Mas pilia ang reviewable revert para sa shared commits, ug pag-amping sa destructive local recovery.|Suriin muna. Mas piliin ang reviewable revert para sa shared commits, at mag-ingat sa destructive local recovery.
+155|Branching strategies ug conflict resolution|Branching strategies at conflict resolution
+156|=|=
+157|Paghimo og interfaces nga masaligan, lig-on ug sayon gamiton.|Gumawa ng interfaces na maaasahan, matatag at madaling gamitin.
+158|=|=
+159|=|=
+160|=|=
+161|JavaScript functions, promises ug components|JavaScript functions, promises at components
+162|=|=
+163|=|=
+164|=|=
+165|=|=
+166|=|=
+167|=|=
+168|=|=
+169|=|=
+170|I-model ang imong domain. Pugngi ang invalid states pinaagi sa maayong types.|I-model ang domain mo. Pigilan ang invalid states gamit ang maayos na types.
+171|=|=
+172|=|=
+173|=|=
+174|JavaScript objects ug functions|JavaScript objects at functions
+175|=|=
+176|=|=
+177|=|=
+178|=|=
+179|=|=
+180|=|=
+181|=|=
+182|Palaloma ang kahibalo sa programming language sa inadlaw nimong code.|Palalimin ang kaalaman sa programming language ng araw-araw mong code.
+183|=|=
+184|=|=
+185|=|=
+186|Functions, arrays ug basic promise syntax|Functions, arrays at basic promise syntax
+187|=|=
+188|=|=
+189|=|=
+190|=|=
+191|=|=
+192|=|=
+193|=|=
+194|Himoang sakto ug episyenteng tubag ang relational data.|Gawing tama at episyenteng sagot ang relational data.
+195|=|=
+196|=|=
+197|=|=
+198|SELECT, WHERE ug primary keys|SELECT, WHERE at primary keys
+199|=|=
+200|=|=
+201|=|=
+202|=|=
+203|=|=
+204|=|=
+205|=|=
+206|=|=
+207|Pagdisenyo og masaligan nga services ug klarong API boundaries.|Magdisenyo ng maaasahang services at malinaw na API boundaries.
+208|=|=
+209|=|=
+210|=|=
+211|JavaScript async/await ug HTTP basics|JavaScript async/await at HTTP basics
+212|=|=
+213|=|=
+214|=|=
+215|=|=
+216|=|=
+217|=|=
+218|=|=
+219|Trabaho nga may pagsalig, gikan sa unang commit ngadto sa production.|Magtrabaho nang may kumpiyansa, mula unang commit hanggang production.
+220|=|=
+221|=|=
+222|=|=
+223|Basic commits, branches ug paggamit sa terminal|Basic commits, branches at paggamit ng terminal
+224|=|=
+225|=|=
+226|=|=
+227|=|=
+228|=|=
+229|=|=
+230|=|=
+231|=|=
+232|Accessible ug responsive nga interfaces nga adunay lig-ong pundasyon.|Accessible at responsive na interfaces na may matibay na pundasyon.
+233|=|=
+234|=|=
+235|=|=
+236|HTML ug CSS syntax|HTML at CSS syntax
+237|=|=
+238|=|=
+239|=|=
+240|=|=
+241|=|=
+242|=|=
+243|=|=
+244|Paghimo og typed services nga adunay klarong domain ug masaligan nga data access.|Gumawa ng typed services na may malinaw na domain at maaasahang data access.
+245|=|=
+246|=|=
+247|=|=
+248|=|=
+249|=|=
+250|=|=
+251|=|=
+252|=|=
+253|=|=
+254|=|=
+255|=|=
+256|Klarong programs nga predictable ang behavior ug adunay mapuslanong tests.|Malinaw na programs na predictable ang behavior at may kapaki-pakinabang na tests.
+257|=|=
+258|=|=
+259|=|=
+260|=|=
+261|=|=
+262|=|=
+263|=|=
+264|=|=
+265|=|=
+266|=|=
+267|Praktikal nga backend features nga adunay lig-ong application boundaries.|Praktikal na backend features na may matibay na application boundaries.
+268|=|=
+269|=|=
+270|=|=
+271|OOP ug HTTP basics|OOP at HTTP basics
+272|=|=
+273|=|=
+274|=|=
+275|=|=
+276|=|=
+277|=|=
+278|Masaligan nga applications, bisan dili kasaligan ang koneksyon.|Maaasahang applications, kahit hindi maaasahan ang koneksyon.
+279|=|=
+280|=|=
+281|=|=
+282|Frontend development ug REST APIs|Frontend development at REST APIs
+283|=|=
+284|=|=
+285|=|=
+286|=|=
+287|=|=
+288|=|=
+289|=|=
+290|Sabta ang agi gikan sa lokal nga kausaban ngadto sa maayong nagdagan nga serbisyo.|Unawain ang daan mula lokal na pagbabago hanggang maayos na tumatakbong serbisyo.
+291|=|=
+292|=|=
+293|=|=
+294|Terminal, Git ug basic networking|Terminal, Git at basic networking
+295|=|=
+296|=|=
+297|=|=
+298|=|=
+299|=|=
+300|=|=
+301|Sabta ang mga transaction|Unawain ang mga transaction
+302|Arrays ug objects|Arrays at objects
+303|Modawat ang reporting API og transactions gikan sa daghang team. Ibalik ang object nga nagpares sa matag category ug total amount. Iapil ang negative refunds ug ayaw usba ang input.|Tumatanggap ang reporting API ng transactions mula sa maraming team. Ibalik ang object na nagtatapat sa bawat category at total amount. Isama ang negative refunds at huwag baguhin ang input.
+304|Ayaw pag-export: paghimo og function nga solve(transactions).|Huwag mag-export: gumawa ng function na solve(transactions).
+305|Ang matag transaction adunay category nga string ug amount nga integer.|Bawat transaction ay may category na string at amount na integer.
+306|Isipa ang talagsaong keys sama sa __proto__ nga normal nga categories.|Ituring ang di-karaniwang keys tulad ng __proto__ bilang normal na categories.
+307|Ibalik ang empty object kung walay input.|Ibalik ang empty object kapag walang input.
+308|Paggrupo sa nagbalik nga categories|Paggrupo ng paulit-ulit na categories
+309|Pagpabilin sa refunds|Pagpapanatili ng refunds
+310|Walay input|Walang input
+311|Category nga sama sa prototype|Category na katulad ng prototype
+312|Kinahanglan og usa ka accumulator entry sa matag lahi nga category.|Kailangan ng isang accumulator entry sa bawat natatanging category.
+313|Ang object nga walay prototype makalikay sa pagbangga sa built-in property names.|Nakaiiwas sa banggaan sa built-in property names ang object na walang prototype.
+314|Paghimo og Object.create(null); sa matag transaction, idugang ang amount sa kasamtangang total sa category, gamit ang zero kung wala pa.|Gumawa ng Object.create(null); sa bawat transaction, idagdag ang amount sa kasalukuyang total ng category, gamit ang zero kung wala pa.
+315|Usa ka pasada mo-total sa O(n) time ug O(k) space para sa k ka category. Ang null-prototype object moila sa matag category isip data ug dili mogamit og inherited properties. Balido usab ang Map nga i-convert gamit ang Object.fromEntries.|Isang pasada ang nagto-total sa O(n) time at O(k) space para sa k category. Itinuturing ng null-prototype object na data ang bawat category at iniiwasan ang inherited properties. Wasto rin ang Map na iko-convert gamit ang Object.fromEntries.
+316|Hapsaya ang booking calendar|Ayusin ang booking calendar
+317|Algorithms|Algorithms
+318|I-merge ang nag-overlap o nagtapad nga bookings nga [start, end]. Ibalik ang dili nag-overlap nga intervals nga naka-sort sa start, nga walay pag-usab sa input sa caller.|I-merge ang nag-overlap o magkadikit na bookings na [start, end]. Ibalik ang hindi nag-overlap na intervals na naka-sort sa start, nang hindi binabago ang input ng caller.
+319|Paghimo og solve(intervals). Finite numeric intervals ang inputs nga start <= end.|Gumawa ng solve(intervals). Finite numeric intervals ang inputs na start <= end.
+320|Kinahanglan i-merge ang nagtapad nga intervals sama sa [1,3] ug [3,5].|Dapat i-merge ang magkadikit na intervals tulad ng [1,3] at [3,5].
+321|Ibalik ang [] kung walay bookings.|Ibalik ang [] kung walang bookings.
+322|Nag-overlap nga bookings|Nag-overlap na bookings
+323|Wala ma-sort nga nagtapad nga bookings|Hindi naka-sort na magkadikit na bookings
+324|Booking sulod sa laing booking|Booking sa loob ng ibang booking
+325|Walay sulod nga calendar|Walang laman na calendar
+326|I-sort ang kopya sa intervals una pilia unsa ang nag-overlap.|I-sort ang kopya ng intervals bago tukuyin kung alin ang nag-overlap.
+327|Itandi ang matag interval sa kataposang interval sa imong output.|Ihambing ang bawat interval sa huling interval sa output mo.
+328|Kung current.start <= last.end, himoa ang last.end nga mas dako nga end. Kung dili, idugang ang kopya sa current.|Kung current.start <= last.end, gawing mas malaking end ang last.end. Kung hindi, idagdag ang kopya ng current.
+329|O(n log n) ang sorting. Dayon i-merge sa linear scan ngadto sa kataposang interval sa output. Kopyaha ang inner arrays aron dili mausab ang input sa caller sa pagpalapad sa interval.|O(n log n) ang sorting. Saka nagme-merge ang linear scan sa huling interval ng output. Kopyahin ang inner arrays para hindi mabago ang input ng caller sa pagpapalawak ng interval.
+330|Tipigi ang mapuslanong responses|Panatilihin ang kapaki-pakinabang na responses
+331|Async programming|Async programming
+332|Gihiusa sa dashboard ang independent service operations. Kada job descriptor adunay value o error. I-simulate ang matag operation isip promise ug ibalik ang tanang resulta sumala sa han-ay sa input, apil ang failures.|Pinagsasama ng dashboard ang independent service operations. Bawat job descriptor ay may value o error. I-simulate ang bawat operation bilang promise at ibalik ang lahat ng resulta ayon sa ayos ng input, kasama ang failures.
+333|Paghimo og async solve(jobs). Sa {value: x}, i-resolve ang x; sa {error: message}, i-reject gamit kana nga message.|Gumawa ng async solve(jobs). Para sa {value: x}, i-resolve ang x; para sa {error: message}, i-reject gamit ang message na iyon.
+334|Ibalik ang {ok:true,value:x} o {ok:false,error:message} sa matag job.|Ibalik ang {ok:true,value:x} o {ok:false,error:message} sa bawat job.
+335|Dili angay mawala ang malampusong resulta tungod sa usa ka failure.|Hindi dapat mawala ang matagumpay na resulta dahil sa isang failure.
+336|Sinagol nga success ug failure|Magkahalong success at failure
+337|Balido ang false ug null|Wasto ang false at null
+338|Walay jobs|Walang jobs
+339|Hunahunaa ang aggregate promise utility nga dili motangtang sa ubang resulta.|Isaalang-alang ang aggregate promise utility na hindi nag-aalis ng ibang resulta.
+340|Ang Promise.allSettled mohatag og status, value o reason sa matag operation.|Nagbibigay ang Promise.allSettled ng status, value o reason sa bawat operation.
+341|I-map ang descriptors ngadto sa promises, i-await ang allSettled, dayon i-map ang matag resulta sa gikinahanglang porma.|I-map ang descriptors sa promises, i-await ang allSettled, saka i-map ang bawat resulta sa kinakailangang hugis.
+342|Bantayan sa Promise.allSettled ang matag operation ug preserbaron ang han-ay. Susiha kung anaa ang error property imbis truthiness, kay balidong success values ang false, zero ug null.|Sinusubaybayan ng Promise.allSettled ang bawat operation at pinapanatili ang ayos. Suriin kung naroon ang error property sa halip na truthiness, dahil wastong success values ang false, zero at null.
+343|I-validate sa boundary|I-validate sa boundary
+344|Backend validation|Backend validation
+345|I-validate ang registration-shaped object nga dili mosalig sa types niini. Data ra ang gi-validate; walay account nga himoon.|I-validate ang registration-shaped object nang hindi nagtitiwala sa types nito. Data lang ang vine-validate; walang account na gagawin.
+346|Paghimo og solve(input) nga mobalik og ordered array sa field names nga sayop ang values.|Gumawa ng solve(input) na magbabalik ng ordered array ng field names na mali ang values.
+347|Kinahanglan nga string ang name nga adunay labing menos duha ka non-whitespace characters human sa trimming.|Dapat string ang name na may hindi bababa sa dalawang non-whitespace character matapos ang trimming.
+348|Kinahanglan nga integer ang age gikan sa 18 hangtod sa 120, apil ang duha.|Dapat integer ang age mula 18 hanggang 120, kasama ang dalawa.
+349|Susiha ang name una sa age. Sa null, arrays o dili objects, invalid ang duha ka fields.|Suriin ang name bago ang age. Para sa null, arrays o hindi objects, invalid ang parehong field.
+350|Balidong input|Wastong input
+351|Sayop nga types|Maling types
+352|Null nga input|Null na input
+353|Mga utlanan sa age|Mga hangganan ng age
+354|Whitespace ug fractional age|Whitespace at fractional age
+355|Susiha ang porma sa input una basahon ang bisan unsang field.|Suriin ang hugis ng input bago basahin ang anumang field.
+356|Object ang typeof null; klarong ilahi ang null ug arrays.|Object ang typeof null; tahasang ibukod ang null at arrays.
+357|Gamita ang trim().length sa name ug Number.isInteger uban sa inclusive bounds sa age.|Gamitin ang trim().length sa name at Number.isInteger kasama ang inclusive bounds sa age.
+358|Ilahi sa boundary validation ang parsing ug domain rules. Ayaw i-coerce ang numeric strings ngadto sa ages gawas kung klarong gitugot sa API contract.|Inihihiwalay ng boundary validation ang parsing at domain rules. Huwag i-coerce ang numeric strings sa ages maliban kung tahasang pinapayagan ng API contract.
+359|Sayop ang total sa inventory|Mali ang total ng inventory
+360|Type coercion|Type coercion
+361|Ang CSV importer mohatag og quantities isip strings. Usahay ang stock total mahimong taas nga gidugtong nga numero. Pangitaa ang hinungdan ug ibalik ang numeric total.|Nagbibigay ang CSV importer ng quantities bilang strings. Minsan nagiging mahabang pinagdikit na numero ang stock total. Hanapin ang sanhi at ibalik ang numeric total.
+362|Paghimo og solve(rows). Kada row adunay quantity nga finite numeric string.|Gumawa ng solve(rows). Bawat row ay may quantity na finite numeric string.
+363|Ayaw usba ang rows. Ibalik ang 0 sa empty input.|Huwag baguhin ang rows. Ibalik ang 0 sa empty input.
+364|Duha ka gi-import nga quantity|Dalawang na-import na quantity
+365|Negative nga adjustment|Negative na adjustment
+366|Walay rows|Walang rows
+367|Ang 12 + 8 kinahanglan mahimong numerong 20.|Ang 12 + 8 ay dapat maging numerong 20.
+368|Ang report nagpakita sa string nga "0128".|Ipinapakita ng report ang string na "0128".
+369|Susiha ang runtime type sa duha ka operands sa +.|Suriin ang runtime type ng parehong operand ng +.
+370|Dili mo-convert ang TypeScript assertion sa runtime value.|Hindi kino-convert ng TypeScript assertion ang runtime value.
+371|I-convert ang quantity sa boundary gamit ang Number una idugang.|I-convert ang quantity sa boundary gamit ang Number bago idagdag.
+372|Magdugtong ang + kung string ang usa ka operand. Ang pag-convert sa matag quantity moayo sa runtime behavior; ang type assertion motago lang sa mismatch sa TypeScript.|Nagdurugtong ang + kapag string ang isang operand. Inaayos ng pag-convert sa bawat quantity ang runtime behavior; itinatago lang ng type assertion ang mismatch sa TypeScript.
+373|Failure nga giisip nga success|Failure na itinuring na success
+374|HTTP errors|HTTP errors
+375|Gimarkahan sa API client nga successful ang failed HTTP responses. Sa response-shaped object, ibalik ang {ok:true,data} sa 2xx ug {ok:false,status} sa uban.|Minamarkahan ng API client na successful ang failed HTTP responses. Sa response-shaped object, ibalik ang {ok:true,data} para sa 2xx at {ok:false,status} sa iba.
+376|Paghimo og solve(response). Integer ang HTTP status.|Gumawa ng solve(response). Integer ang HTTP status.
+377|Successful ang matag status gikan sa 200 hangtod sa 299.|Successful ang bawat status mula 200 hanggang 299.
+378|Preserbara ang false, zero ug null nga data sa success.|Panatilihin ang false, zero at null na data sa success.
+379|=|=
+380|Wala makit-i|Hindi makita
+381|Server error|Server error
+382|Dili success ang redirect|Hindi success ang redirect
+383|Taas nga utlanan sa success|Itaas na hangganan ng success
+384|Kinahanglan moagi sa error path ang 404.|Dapat dumaan sa error path ang 404.
+385|Nagpakita og success ang UI sa matag nonzero status.|Nagpapakita ng success ang UI sa bawat nonzero status.
+386|Dili HTTP success check ang truthiness.|Hindi HTTP success check ang truthiness.
+387|Susiha ang inclusive lower bound ug exclusive upper bound.|Suriin ang inclusive lower bound at exclusive upper bound.
+388|Success kung status >= 200 && status < 300; ayaw usab gamita ang truthiness sa data.|Success kung status >= 200 && status < 300; huwag ding gamitin ang truthiness ng data.
+389|Positibong numero ang HTTP status codes, busa dawaton sa truthiness ang halos tanang response. Numeric range ang success class.|Positibong numero ang HTTP status codes, kaya tinatanggap ng truthiness ang halos lahat ng response. Numeric range ang success class.
+390|Moabot ang resulta human sa return|Dumarating ang resulta pagkatapos ng return
+391|Async control flow|Async control flow
+392|Mobalik og empty array ang asynchronous transform una mahuman ang trabaho. Ibalik ang gipilo nga mga numero sa orihinal nilang han-ay.|Nagbabalik ng empty array ang asynchronous transform bago matapos ang trabaho. Ibalik ang dinobleng mga numero sa orihinal nilang ayos.
+393|Paghimo og async solve(values). Array sa finite numbers ang input.|Gumawa ng async solve(values). Array ng finite numbers ang input.
+394|Gamita ang asynchronous transformations ug hulata ang tanang resulta.|Gamitin ang asynchronous transformations at hintayin ang lahat ng resulta.
+395|Ayaw usba ang input.|Huwag baguhin ang input.
+396|Tulo ka values|Tatlong values
+397|Zero ug negative values|Zero at negative values
+398|Walay input|Walang input
+399|Ibalik ang [2, 4, 6] human mahuman ang tanang transformations.|Ibalik ang [2, 4, 6] matapos ang lahat ng transformation.
+400|Madawat dayon sa caller ang [].|Agad na natatanggap ng caller ang [].
+401|Ibalik ba sa forEach ang promises sa callback niini?|Ibinabalik ba ng forEach ang promises ng callback nito?
+402|Tigoma hinuon ang promises gamit ang map.|Tipunin sa halip ang promises gamit ang map.
+403|Ibalik ang await Promise.all(values.map(async value => ...)); matag callback mobalik sa kaugalingong resulta.|Ibalik ang await Promise.all(values.map(async value => ...)); bawat callback ay magbabalik ng sarili nitong resulta.
+404|Dili tipigon sa forEach ang callback return values. Walay tabang ang pag-await sa forEach. Mohimo ang map og promise array nga ma-await sa Promise.all, nga nagpreserbar sa input order.|Hindi iniingatan ng forEach ang callback return values. Hindi makatutulong ang pag-await sa forEach. Gumagawa ang map ng promise array na maa-await ng Promise.all, na pinapanatili ang input order.
